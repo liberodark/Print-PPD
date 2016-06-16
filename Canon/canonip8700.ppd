@@ -1,0 +1,1758 @@
+*PPD-Adobe: "4.3"
+*%  CUPS add-on PPD file for Canon Inkjet Printer Driver.
+*%  Copyright CANON INC. 2001-2014
+*%
+*%  This program is free software; you can redistribute it and/or modify
+*%  it under the terms of the GNU General Public License as published by
+*%  the Free Software Foundation; version 2 of the License.
+*%
+*%  This program is distributed in the hope that it will be useful,
+*%  but WITHOUT ANY WARRANTY; without even the implied warranty of
+*%  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+*%  GNU General Public License for more details.
+*%
+*%  You should have received a copy of the GNU General Public License
+*%  along with this program; if not, write to the Free Software
+*%  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307, USA.
+
+*FileVersion: "1.0"
+*FormatVersion:	"4.3"
+*LanguageEncoding: ISOLatin1
+*LanguageVersion: English
+*Manufacturer: "Canon"
+*ModelName: "Canon IP8700 series"
+*NickName: "Canon IP8700 series Ver.4.10"
+*PCFileName: "CNIP8700.PPD"
+*Product: "(ip8700)"
+*PSVersion: "(3010.000) 550"
+*PSVersion: "(3010.000) 651"
+*PSVersion: "(3010.000) 705"
+*PSVersion: "(3010.000) 715"
+*ShortNickName: "IP8700"
+
+*ColorDevice: True
+*DefaultColorSpace: RGB
+*Throughput: "1"
+*LandscapeOrientation: Plus90
+*LanguageLevel: "3"
+*FileSystem: False
+*TTRasterizer: Type42
+
+*cupsFilter: "application/vnd.cups-postscript 0 pstocanonij"
+*cupsFilter: "application/vnd.cups-command 0 cmdtocanonij"
+*cupsCommand: "AutoConfigure Clean PrintSelfTestPage ReportStatus"
+
+*cupsManualCopies: True
+*cupsModelNumber: 436
+*cupsVersion: 1.2
+*cupsLanguages: "de fr zh ja"
+
+*MaxMediaWidth: "933"
+*MaxMediaHeight: "1917"
+*CenterRegistered: False
+*HWMargins: 9.64 14.17 9.64 8.50
+*LeadingEdge Short: ""
+*DefaultLeadingEdge: Short
+*VariablePaperSize: True
+*ParamCustomPageSize Width: 1 points 252.29 932.60
+*ParamCustomPageSize Height: 2 points 360.00 1916.23
+*ParamCustomPageSize WidthOffset: 3 points 0 0
+*ParamCustomPageSize HeightOffset: 4 points 0 0
+*ParamCustomPageSize Orientation: 5 int 1 1
+*CustomPageSize True: "pop pop pop <</PageSize [5 -2 roll] /ImagingBBox null>>setpagedevice"
+
+*DefaultImageableArea: A4
+*ImageableArea Letter: "18.14 14.17 594.14 783.50"
+*ImageableArea Letter.bl: "0 0 612 792"
+*ImageableArea Legal: "18.14 14.17 594.14 999.50"
+*ImageableArea ledger: "9.64 14.17 782.36 1215.50"
+*ImageableArea ledger.bl: "0 0 792 1224"
+*ImageableArea A5: "9.64 14.17 409.89 586.77"
+*ImageableArea A4: "9.64 14.17 585.64 833.39"
+*ImageableArea A4.bl: "0 0 595 842"
+*ImageableArea a3: "9.64 14.17 832.25 1182.05"
+*ImageableArea a3.bl: "0 0 842 1191"
+*ImageableArea a3plus: "9.64 14.17 922.96 1360.63"
+*ImageableArea a3plus.bl: "0 0 933 1369"
+*ImageableArea B5: "9.64 14.17 506.27 720.00"
+*ImageableArea b4: "9.64 14.17 718.87 1023.31"
+*ImageableArea 4X6: "9.64 14.17 278.36 423.50"
+*ImageableArea 4X6.bl: "0 0 288 432"
+*ImageableArea 5X7: "9.64 14.17 350.36 495.50"
+*ImageableArea 5X7.bl: "0 0 360 504"
+*ImageableArea 8X10: "9.64 14.17 566.36 711.50"
+*ImageableArea 8X10.bl: "0 0 576 720"
+*ImageableArea 10X12: "9.64 14.17 710.36 855.50"
+*ImageableArea 10X12.bl: "0 0 720 864"
+*ImageableArea l: "9.64 14.17 242.65 351.50"
+*ImageableArea l.bl: "0 0 252 360"
+*ImageableArea 2l: "9.64 14.17 350.36 496.06"
+*ImageableArea 2l.bl: "0 0 360 505"
+*ImageableArea letterfineart35: "18.14 99.21 594.14 692.79"
+*ImageableArea a4fineart35: "9.64 99.21 585.64 742.68"
+*ImageableArea a3fineart35: "9.64 99.21 832.25 1091.34"
+*ImageableArea a3plusfineart35: "9.64 99.21 922.96 1269.92"
+*ImageableArea postcard: "9.64 14.17 273.83 411.02"
+*ImageableArea postcard.bl: "0 0 283 420"
+*ImageableArea postdbl: "9.64 14.17 557.29 411.02"
+*ImageableArea envelop10p: "15.87 106.02 281.11 675.50"
+*ImageableArea envelopdlp: "15.87 106.02 295.94 615.12"
+*ImageableArea envj4p: "9.64 106.02 288.00 657.64"
+*ImageableArea envj6p: "9.64 106.02 268.16 530.08"
+
+*DefaultPaperDimension: A4
+*PaperDimension Letter: "612 792"
+*PaperDimension Letter.bl: "613 793"
+*PaperDimension Legal: "612 1008"
+*PaperDimension ledger: "792 1224"
+*PaperDimension ledger.bl: "793 1225"
+*PaperDimension A5: "420 595"
+*PaperDimension A4: "595 842"
+*PaperDimension A4.bl: "596 843"
+*PaperDimension a3: "842 1191"
+*PaperDimension a3.bl: "843 1192"
+*PaperDimension a3plus: "933 1369"
+*PaperDimension a3plus.bl: "934 1370"
+*PaperDimension B5: "516 729"
+*PaperDimension b4: "729 1032"
+*PaperDimension 4X6: "288 432"
+*PaperDimension 4X6.bl: "289 433"
+*PaperDimension 5X7: "360 504"
+*PaperDimension 5X7.bl: "361 505"
+*PaperDimension 8X10: "576 720"
+*PaperDimension 8X10.bl: "577 721"
+*PaperDimension 10X12: "720 864"
+*PaperDimension 10X12.bl: "721 865"
+*PaperDimension l: "252 360"
+*PaperDimension l.bl: "253 361"
+*PaperDimension 2l: "360 505"
+*PaperDimension 2l.bl: "361 506"
+*PaperDimension letterfineart35: "612 792"
+*PaperDimension a4fineart35: "595 842"
+*PaperDimension a3fineart35: "842 1191"
+*PaperDimension a3plusfineart35: "933 1369"
+*PaperDimension postcard: "283 420"
+*PaperDimension postcard.bl: "284 421"
+*PaperDimension postdbl: "567 420"
+*PaperDimension envelop10p: "297 684"
+*PaperDimension envelopdlp: "312 624"
+*PaperDimension envj4p: "298 666"
+*PaperDimension envj6p: "278 539"
+
+
+*OpenGroup: *CNMain/Main
+
+*OpenUI *MediaType/Media Type: PickOne
+*DefaultMediaType: plain
+*MediaType plain/Plain Paper: "<</MediaType(plain)>>setpagedevice"
+*MediaType glossygold/Photo Paper Plus Glossy II: "<</MediaType(glossygold)>>setpagedevice"
+*MediaType proplatinum/Photo Paper Pro Platinum: "<</MediaType(proplatinum)>>setpagedevice"
+*MediaType luster/Photo Paper Pro Luster: "<</MediaType(luster)>>setpagedevice"
+*MediaType semigloss/Photo Paper Plus Semi-gloss: "<</MediaType(semigloss)>>setpagedevice"
+*MediaType glossystandard/Glossy Photo Paper: "<</MediaType(glossystandard)>>setpagedevice"
+*MediaType matte/Matte Photo Paper: "<</MediaType(matte)>>setpagedevice"
+*MediaType otherfineart/Other Fine Art Paper: "<</MediaType(otherfineart)>>setpagedevice"
+*MediaType envelope/Envelope: "<</MediaType(envelope)>>setpagedevice"
+*MediaType postcardaddress/Hagaki A: "<</MediaType(postcardaddress)>>setpagedevice"
+*MediaType ijpostcard/Ink Jet Hagaki: "<</MediaType(ijpostcard)>>setpagedevice"
+*MediaType glossypost/Hagaki K: "<</MediaType(glossypost)>>setpagedevice"
+*MediaType postcard/Hagaki: "<</MediaType(postcard)>>setpagedevice"
+*MediaType highres/High Resolution Paper: "<</MediaType(highres)>>setpagedevice"
+*MediaType tshirt/T-Shirt Transfers: "<</MediaType(tshirt)>>setpagedevice"
+*MediaType otherphoto/Other Photo Paper: "<</MediaType(otherphoto)>>setpagedevice"
+*CloseUI: *MediaType
+
+*OpenUI *InputSlot/Paper Source: PickOne
+*DefaultInputSlot: asf
+*InputSlot asf/Rear Tray: "<</MediaPosition 0>>setpagedevice"
+*CloseUI: *InputSlot
+
+*OpenUI *CNQuality/Print Quality: PickOne
+*DefaultCNQuality: 3
+*CNQuality 1/1(High): "<</CNQuality(1)>>setpagedevice"
+*CNQuality 2/2: "<</CNQuality(2)>>setpagedevice"
+*CNQuality 3/3: "<</CNQuality(3)>>setpagedevice"
+*CNQuality 4/4(Draft): "<</CNQuality(4)>>setpagedevice"
+*CloseUI: *CNQuality
+
+*OpenUI *CNGrayscale/Grayscale Printing: Boolean
+*DefaultCNGrayscale: False
+*CNGrayscale True/ON: "<</CNGrayscale(True)>>setpagedevice"
+*CNGrayscale False/OFF: "<</CNGrayscale(False)>>setpagedevice"
+*CloseUI: *CNGrayscale
+
+*CloseGroup: *CNMain
+
+
+*OpenGroup: *CNPagesetup/Page Setup
+
+*OpenUI *PageSize/Page Size: PickOne
+*DefaultPageSize: A4
+*PageSize Letter/Letter [8.50"x11.00" 215.9x279.4mm]: "<</CNPageSizeName(Letter)/PageSize[612 792]/ImagingBBox null>>setpagedevice"
+*PageSize Letter.bl/Letter(borderless) [8.50"x11.00" 215.9x279.4mm]: "<</CNPageSizeName(Letter.bl)/PageSize[612 792]/ImagingBBox null>>setpagedevice"
+*PageSize Legal/Legal [8.50"x14.00" 215.9x355.6mm]: "<</CNPageSizeName(Legal)/PageSize[612 1008]/ImagingBBox null>>setpagedevice"
+*PageSize ledger/11"x17" [11.00"x17.00" 279.4x431.8mm]: "<</CNPageSizeName(ledger)/PageSize[792 1224]/ImagingBBox null>>setpagedevice"
+*PageSize ledger.bl/11"x17"(borderless) [11.00"x17.00" 279.4x431.8mm]: "<</CNPageSizeName(ledger.bl)/PageSize[792 1224]/ImagingBBox null>>setpagedevice"
+*PageSize A5/A5 [5.83"x8.27" 148.0x210.0mm]: "<</CNPageSizeName(A5)/PageSize[420 595]/ImagingBBox null>>setpagedevice"
+*PageSize A4/A4 [8.27"x11.69" 210.0x297.0mm]: "<</CNPageSizeName(A4)/PageSize[595 842]/ImagingBBox null>>setpagedevice"
+*PageSize A4.bl/A4(borderless) [8.27"x11.69" 210.0x297.0mm]: "<</CNPageSizeName(A4.bl)/PageSize[595 842]/ImagingBBox null>>setpagedevice"
+*PageSize a3/A3 [11.69"x16.54" 297.0x420.0mm]: "<</CNPageSizeName(a3)/PageSize[842 1191]/ImagingBBox null>>setpagedevice"
+*PageSize a3.bl/A3(borderless) [11.69"x16.54" 297.0x420.0mm]: "<</CNPageSizeName(a3.bl)/PageSize[842 1191]/ImagingBBox null>>setpagedevice"
+*PageSize a3plus/A3+ [12.95"x19.02" 329.0x483.0mm]: "<</CNPageSizeName(a3plus)/PageSize[933 1369]/ImagingBBox null>>setpagedevice"
+*PageSize a3plus.bl/A3+(borderless) [12.95"x19.02" 329.0x483.0mm]: "<</CNPageSizeName(a3plus.bl)/PageSize[933 1369]/ImagingBBox null>>setpagedevice"
+*PageSize B5/B5 [7.17"x10.12" 182.0x257.0mm]: "<</CNPageSizeName(B5)/PageSize[516 729]/ImagingBBox null>>setpagedevice"
+*PageSize b4/B4 [10.12"x14.33" 257.0x364.0mm]: "<</CNPageSizeName(b4)/PageSize[729 1032]/ImagingBBox null>>setpagedevice"
+*PageSize 4X6/4"x6" [4.00"x6.00" 101.6x152.4mm]: "<</CNPageSizeName(4X6)/PageSize[288 432]/ImagingBBox null>>setpagedevice"
+*PageSize 4X6.bl/4"x6"(borderless) [4.00"x6.00" 101.6x152.4mm]: "<</CNPageSizeName(4X6.bl)/PageSize[288 432]/ImagingBBox null>>setpagedevice"
+*PageSize 5X7/5"x7" [5.00"x7.00" 127.0x177.8mm]: "<</CNPageSizeName(5X7)/PageSize[360 504]/ImagingBBox null>>setpagedevice"
+*PageSize 5X7.bl/5"x7"(borderless) [5.00"x7.00" 127.0x177.8mm]: "<</CNPageSizeName(5X7.bl)/PageSize[360 504]/ImagingBBox null>>setpagedevice"
+*PageSize 8X10/8"x10" [8.00"x10.00" 203.2x254.0mm]: "<</CNPageSizeName(8X10)/PageSize[576 720]/ImagingBBox null>>setpagedevice"
+*PageSize 8X10.bl/8"x10"(borderless) [8.00"x10.00" 203.2x254.0mm]: "<</CNPageSizeName(8X10.bl)/PageSize[576 720]/ImagingBBox null>>setpagedevice"
+*PageSize 10X12/10"x12" [10.00"x12.00" 254.0x304.8mm]: "<</CNPageSizeName(10X12)/PageSize[720 864]/ImagingBBox null>>setpagedevice"
+*PageSize 10X12.bl/10"x12"(borderless) [10.00"x12.00" 254.0x304.8mm]: "<</CNPageSizeName(10X12.bl)/PageSize[720 864]/ImagingBBox null>>setpagedevice"
+*PageSize l/L [3.50"x5.00" 89.0x127.0mm]: "<</CNPageSizeName(l)/PageSize[252 360]/ImagingBBox null>>setpagedevice"
+*PageSize l.bl/L(borderless) [3.50"x5.00" 89.0x127.0mm]: "<</CNPageSizeName(l.bl)/PageSize[252 360]/ImagingBBox null>>setpagedevice"
+*PageSize 2l/2L [5.00"x7.01" 127.0x178.0mm]: "<</CNPageSizeName(2l)/PageSize[360 505]/ImagingBBox null>>setpagedevice"
+*PageSize 2l.bl/2L(borderless) [5.00"x7.01" 127.0x178.0mm]: "<</CNPageSizeName(2l.bl)/PageSize[360 505]/ImagingBBox null>>setpagedevice"
+*PageSize letterfineart35/Letter (Art Paper Margin 35) [8.50"x11.00" 215.9x279.4mm]: "<</CNPageSizeName(letterfineart35)/PageSize[612 792]/ImagingBBox null>>setpagedevice"
+*PageSize a4fineart35/A4 (Art Paper Margin 35) [8.27"x11.69" 210.0x297.0mm]: "<</CNPageSizeName(a4fineart35)/PageSize[595 842]/ImagingBBox null>>setpagedevice"
+*PageSize a3fineart35/A3 (Art Paper Margin 35) [11.69"x16.54" 297.0x420.0mm]: "<</CNPageSizeName(a3fineart35)/PageSize[842 1191]/ImagingBBox null>>setpagedevice"
+*PageSize a3plusfineart35/A3+ (Art Paper Margin 35) [12.95"x19.02" 329.0x483.0mm]: "<</CNPageSizeName(a3plusfineart35)/PageSize[933 1369]/ImagingBBox null>>setpagedevice"
+*PageSize postcard/Hagaki [3.94"x5.83" 100.0x148.0mm]: "<</CNPageSizeName(postcard)/PageSize[283 420]/ImagingBBox null>>setpagedevice"
+*PageSize postcard.bl/Hagaki(borderless) [3.94"x5.83" 100.0x148.0mm]: "<</CNPageSizeName(postcard.bl)/PageSize[283 420]/ImagingBBox null>>setpagedevice"
+*PageSize postdbl/Hagaki 2 [7.87"x5.83" 200.0x148.0mm]: "<</CNPageSizeName(postdbl)/PageSize[567 420]/ImagingBBox null>>setpagedevice"
+*PageSize envelop10p/Envelope Com 10 [4.12"x9.50" 104.8x241.3mm]: "<</CNPageSizeName(envelop10p)/PageSize[297 684]/ImagingBBox null>>setpagedevice"
+*PageSize envelopdlp/Envelope DL [4.33"x8.66" 110.0x220.0mm]: "<</CNPageSizeName(envelopdlp)/PageSize[312 624]/ImagingBBox null>>setpagedevice"
+*PageSize envj4p/Yougata 4 [4.13"x9.25" 105.0x235.0mm]: "<</CNPageSizeName(envj4p)/PageSize[298 666]/ImagingBBox null>>setpagedevice"
+*PageSize envj6p/Yougata 6 [3.86"x7.48" 98.0x190.0mm]: "<</CNPageSizeName(envj6p)/PageSize[278 539]/ImagingBBox null>>setpagedevice"
+*CloseUI: *PageSize
+
+*OpenUI *PageRegion: PickOne
+*DefaultPageRegion: A4
+*PageRegion Letter/Letter [8.50"x11.00" 215.9x279.4mm]: "<</CNPageSizeName(Letter)/PageSize[612 792]/ImagingBBox null>>setpagedevice"
+*PageRegion Letter.bl/Letter(borderless) [8.50"x11.00" 215.9x279.4mm]: "<</CNPageSizeName(Letter.bl)/PageSize[612 792]/ImagingBBox null>>setpagedevice"
+*PageRegion Legal/Legal [8.50"x14.00" 215.9x355.6mm]: "<</CNPageSizeName(Legal)/PageSize[612 1008]/ImagingBBox null>>setpagedevice"
+*PageRegion ledger/11"x17" [11.00"x17.00" 279.4x431.8mm]: "<</CNPageSizeName(ledger)/PageSize[792 1224]/ImagingBBox null>>setpagedevice"
+*PageRegion ledger.bl/11"x17"(borderless) [11.00"x17.00" 279.4x431.8mm]: "<</CNPageSizeName(ledger.bl)/PageSize[792 1224]/ImagingBBox null>>setpagedevice"
+*PageRegion A5/A5 [5.83"x8.27" 148.0x210.0mm]: "<</CNPageSizeName(A5)/PageSize[420 595]/ImagingBBox null>>setpagedevice"
+*PageRegion A4/A4 [8.27"x11.69" 210.0x297.0mm]: "<</CNPageSizeName(A4)/PageSize[595 842]/ImagingBBox null>>setpagedevice"
+*PageRegion A4.bl/A4(borderless) [8.27"x11.69" 210.0x297.0mm]: "<</CNPageSizeName(A4.bl)/PageSize[595 842]/ImagingBBox null>>setpagedevice"
+*PageRegion a3/A3 [11.69"x16.54" 297.0x420.0mm]: "<</CNPageSizeName(a3)/PageSize[842 1191]/ImagingBBox null>>setpagedevice"
+*PageRegion a3.bl/A3(borderless) [11.69"x16.54" 297.0x420.0mm]: "<</CNPageSizeName(a3.bl)/PageSize[842 1191]/ImagingBBox null>>setpagedevice"
+*PageRegion a3plus/A3+ [12.95"x19.02" 329.0x483.0mm]: "<</CNPageSizeName(a3plus)/PageSize[933 1369]/ImagingBBox null>>setpagedevice"
+*PageRegion a3plus.bl/A3+(borderless) [12.95"x19.02" 329.0x483.0mm]: "<</CNPageSizeName(a3plus.bl)/PageSize[933 1369]/ImagingBBox null>>setpagedevice"
+*PageRegion B5/B5 [7.17"x10.12" 182.0x257.0mm]: "<</CNPageSizeName(B5)/PageSize[516 729]/ImagingBBox null>>setpagedevice"
+*PageRegion b4/B4 [10.12"x14.33" 257.0x364.0mm]: "<</CNPageSizeName(b4)/PageSize[729 1032]/ImagingBBox null>>setpagedevice"
+*PageRegion 4X6/4"x6" [4.00"x6.00" 101.6x152.4mm]: "<</CNPageSizeName(4X6)/PageSize[288 432]/ImagingBBox null>>setpagedevice"
+*PageRegion 4X6.bl/4"x6"(borderless) [4.00"x6.00" 101.6x152.4mm]: "<</CNPageSizeName(4X6.bl)/PageSize[288 432]/ImagingBBox null>>setpagedevice"
+*PageRegion 5X7/5"x7" [5.00"x7.00" 127.0x177.8mm]: "<</CNPageSizeName(5X7)/PageSize[360 504]/ImagingBBox null>>setpagedevice"
+*PageRegion 5X7.bl/5"x7"(borderless) [5.00"x7.00" 127.0x177.8mm]: "<</CNPageSizeName(5X7.bl)/PageSize[360 504]/ImagingBBox null>>setpagedevice"
+*PageRegion 8X10/8"x10" [8.00"x10.00" 203.2x254.0mm]: "<</CNPageSizeName(8X10)/PageSize[576 720]/ImagingBBox null>>setpagedevice"
+*PageRegion 8X10.bl/8"x10"(borderless) [8.00"x10.00" 203.2x254.0mm]: "<</CNPageSizeName(8X10.bl)/PageSize[576 720]/ImagingBBox null>>setpagedevice"
+*PageRegion 10X12/10"x12" [10.00"x12.00" 254.0x304.8mm]: "<</CNPageSizeName(10X12)/PageSize[720 864]/ImagingBBox null>>setpagedevice"
+*PageRegion 10X12.bl/10"x12"(borderless) [10.00"x12.00" 254.0x304.8mm]: "<</CNPageSizeName(10X12.bl)/PageSize[720 864]/ImagingBBox null>>setpagedevice"
+*PageRegion l/L [3.50"x5.00" 89.0x127.0mm]: "<</CNPageSizeName(l)/PageSize[252 360]/ImagingBBox null>>setpagedevice"
+*PageRegion l.bl/L(borderless) [3.50"x5.00" 89.0x127.0mm]: "<</CNPageSizeName(l.bl)/PageSize[252 360]/ImagingBBox null>>setpagedevice"
+*PageRegion 2l/2L [5.00"x7.01" 127.0x178.0mm]: "<</CNPageSizeName(2l)/PageSize[360 505]/ImagingBBox null>>setpagedevice"
+*PageRegion 2l.bl/2L(borderless) [5.00"x7.01" 127.0x178.0mm]: "<</CNPageSizeName(2l.bl)/PageSize[360 505]/ImagingBBox null>>setpagedevice"
+*PageRegion letterfineart35/Letter (Art Paper Margin 35) [8.50"x11.00" 215.9x279.4mm]: "<</CNPageSizeName(letterfineart35)/PageSize[612 792]/ImagingBBox null>>setpagedevice"
+*PageRegion a4fineart35/A4 (Art Paper Margin 35) [8.27"x11.69" 210.0x297.0mm]: "<</CNPageSizeName(a4fineart35)/PageSize[595 842]/ImagingBBox null>>setpagedevice"
+*PageRegion a3fineart35/A3 (Art Paper Margin 35) [11.69"x16.54" 297.0x420.0mm]: "<</CNPageSizeName(a3fineart35)/PageSize[842 1191]/ImagingBBox null>>setpagedevice"
+*PageRegion a3plusfineart35/A3+ (Art Paper Margin 35) [12.95"x19.02" 329.0x483.0mm]: "<</CNPageSizeName(a3plusfineart35)/PageSize[933 1369]/ImagingBBox null>>setpagedevice"
+*PageRegion postcard/Hagaki [3.94"x5.83" 100.0x148.0mm]: "<</CNPageSizeName(postcard)/PageSize[283 420]/ImagingBBox null>>setpagedevice"
+*PageRegion postcard.bl/Hagaki(borderless) [3.94"x5.83" 100.0x148.0mm]: "<</CNPageSizeName(postcard.bl)/PageSize[283 420]/ImagingBBox null>>setpagedevice"
+*PageRegion postdbl/Hagaki 2 [7.87"x5.83" 200.0x148.0mm]: "<</CNPageSizeName(postdbl)/PageSize[567 420]/ImagingBBox null>>setpagedevice"
+*PageRegion envelop10p/Envelope Com 10 [4.12"x9.50" 104.8x241.3mm]: "<</CNPageSizeName(envelop10p)/PageSize[297 684]/ImagingBBox null>>setpagedevice"
+*PageRegion envelopdlp/Envelope DL [4.33"x8.66" 110.0x220.0mm]: "<</CNPageSizeName(envelopdlp)/PageSize[312 624]/ImagingBBox null>>setpagedevice"
+*PageRegion envj4p/Yougata 4 [4.13"x9.25" 105.0x235.0mm]: "<</CNPageSizeName(envj4p)/PageSize[298 666]/ImagingBBox null>>setpagedevice"
+*PageRegion envj6p/Yougata 6 [3.86"x7.48" 98.0x190.0mm]: "<</CNPageSizeName(envj6p)/PageSize[278 539]/ImagingBBox null>>setpagedevice"
+*CloseUI: *PageRegion
+
+*CloseGroup: *CNPagesetup
+
+
+*OpenGroup: *CNBorderless/Borderless
+
+*OpenUI *CNExtension/Amount of Extension: PickOne
+*DefaultCNExtension: 2
+*CNExtension 0/0: "<</CNExtension(0)>>setpagedevice"
+*CNExtension 1/1: "<</CNExtension(1)>>setpagedevice"
+*CNExtension 2/2: "<</CNExtension(2)>>setpagedevice"
+*CNExtension 3/3: "<</CNExtension(3)>>setpagedevice"
+*CloseUI: *CNExtension
+
+*CloseGroup: *CNBorderless
+
+
+*OpenGroup: *CNColorAdjust/Manual Color Adjustment
+
+*OpenUI *CNBalanceC/Cyan: PickOne
+*DefaultCNBalanceC: 0
+*CNBalanceC -50/-50: "<</CNBalanceC(-50)>>setpagedevice"
+*CNBalanceC -49/-49: "<</CNBalanceC(-49)>>setpagedevice"
+*CNBalanceC -48/-48: "<</CNBalanceC(-48)>>setpagedevice"
+*CNBalanceC -47/-47: "<</CNBalanceC(-47)>>setpagedevice"
+*CNBalanceC -46/-46: "<</CNBalanceC(-46)>>setpagedevice"
+*CNBalanceC -45/-45: "<</CNBalanceC(-45)>>setpagedevice"
+*CNBalanceC -44/-44: "<</CNBalanceC(-44)>>setpagedevice"
+*CNBalanceC -43/-43: "<</CNBalanceC(-43)>>setpagedevice"
+*CNBalanceC -42/-42: "<</CNBalanceC(-42)>>setpagedevice"
+*CNBalanceC -41/-41: "<</CNBalanceC(-41)>>setpagedevice"
+*CNBalanceC -40/-40: "<</CNBalanceC(-40)>>setpagedevice"
+*CNBalanceC -39/-39: "<</CNBalanceC(-39)>>setpagedevice"
+*CNBalanceC -38/-38: "<</CNBalanceC(-38)>>setpagedevice"
+*CNBalanceC -37/-37: "<</CNBalanceC(-37)>>setpagedevice"
+*CNBalanceC -36/-36: "<</CNBalanceC(-36)>>setpagedevice"
+*CNBalanceC -35/-35: "<</CNBalanceC(-35)>>setpagedevice"
+*CNBalanceC -34/-34: "<</CNBalanceC(-34)>>setpagedevice"
+*CNBalanceC -33/-33: "<</CNBalanceC(-33)>>setpagedevice"
+*CNBalanceC -32/-32: "<</CNBalanceC(-32)>>setpagedevice"
+*CNBalanceC -31/-31: "<</CNBalanceC(-31)>>setpagedevice"
+*CNBalanceC -30/-30: "<</CNBalanceC(-30)>>setpagedevice"
+*CNBalanceC -29/-29: "<</CNBalanceC(-29)>>setpagedevice"
+*CNBalanceC -28/-28: "<</CNBalanceC(-28)>>setpagedevice"
+*CNBalanceC -27/-27: "<</CNBalanceC(-27)>>setpagedevice"
+*CNBalanceC -26/-26: "<</CNBalanceC(-26)>>setpagedevice"
+*CNBalanceC -25/-25: "<</CNBalanceC(-25)>>setpagedevice"
+*CNBalanceC -24/-24: "<</CNBalanceC(-24)>>setpagedevice"
+*CNBalanceC -23/-23: "<</CNBalanceC(-23)>>setpagedevice"
+*CNBalanceC -22/-22: "<</CNBalanceC(-22)>>setpagedevice"
+*CNBalanceC -21/-21: "<</CNBalanceC(-21)>>setpagedevice"
+*CNBalanceC -20/-20: "<</CNBalanceC(-20)>>setpagedevice"
+*CNBalanceC -19/-19: "<</CNBalanceC(-19)>>setpagedevice"
+*CNBalanceC -18/-18: "<</CNBalanceC(-18)>>setpagedevice"
+*CNBalanceC -17/-17: "<</CNBalanceC(-17)>>setpagedevice"
+*CNBalanceC -16/-16: "<</CNBalanceC(-16)>>setpagedevice"
+*CNBalanceC -15/-15: "<</CNBalanceC(-15)>>setpagedevice"
+*CNBalanceC -14/-14: "<</CNBalanceC(-14)>>setpagedevice"
+*CNBalanceC -13/-13: "<</CNBalanceC(-13)>>setpagedevice"
+*CNBalanceC -12/-12: "<</CNBalanceC(-12)>>setpagedevice"
+*CNBalanceC -11/-11: "<</CNBalanceC(-11)>>setpagedevice"
+*CNBalanceC -10/-10: "<</CNBalanceC(-10)>>setpagedevice"
+*CNBalanceC -9/-9: "<</CNBalanceC(-9)>>setpagedevice"
+*CNBalanceC -8/-8: "<</CNBalanceC(-8)>>setpagedevice"
+*CNBalanceC -7/-7: "<</CNBalanceC(-7)>>setpagedevice"
+*CNBalanceC -6/-6: "<</CNBalanceC(-6)>>setpagedevice"
+*CNBalanceC -5/-5: "<</CNBalanceC(-5)>>setpagedevice"
+*CNBalanceC -4/-4: "<</CNBalanceC(-4)>>setpagedevice"
+*CNBalanceC -3/-3: "<</CNBalanceC(-3)>>setpagedevice"
+*CNBalanceC -2/-2: "<</CNBalanceC(-2)>>setpagedevice"
+*CNBalanceC -1/-1: "<</CNBalanceC(-1)>>setpagedevice"
+*CNBalanceC 0/0: "<</CNBalanceC(0)>>setpagedevice"
+*CNBalanceC 1/1: "<</CNBalanceC(1)>>setpagedevice"
+*CNBalanceC 2/2: "<</CNBalanceC(2)>>setpagedevice"
+*CNBalanceC 3/3: "<</CNBalanceC(3)>>setpagedevice"
+*CNBalanceC 4/4: "<</CNBalanceC(4)>>setpagedevice"
+*CNBalanceC 5/5: "<</CNBalanceC(5)>>setpagedevice"
+*CNBalanceC 6/6: "<</CNBalanceC(6)>>setpagedevice"
+*CNBalanceC 7/7: "<</CNBalanceC(7)>>setpagedevice"
+*CNBalanceC 8/8: "<</CNBalanceC(8)>>setpagedevice"
+*CNBalanceC 9/9: "<</CNBalanceC(9)>>setpagedevice"
+*CNBalanceC 10/10: "<</CNBalanceC(10)>>setpagedevice"
+*CNBalanceC 11/11: "<</CNBalanceC(11)>>setpagedevice"
+*CNBalanceC 12/12: "<</CNBalanceC(12)>>setpagedevice"
+*CNBalanceC 13/13: "<</CNBalanceC(13)>>setpagedevice"
+*CNBalanceC 14/14: "<</CNBalanceC(14)>>setpagedevice"
+*CNBalanceC 15/15: "<</CNBalanceC(15)>>setpagedevice"
+*CNBalanceC 16/16: "<</CNBalanceC(16)>>setpagedevice"
+*CNBalanceC 17/17: "<</CNBalanceC(17)>>setpagedevice"
+*CNBalanceC 18/18: "<</CNBalanceC(18)>>setpagedevice"
+*CNBalanceC 19/19: "<</CNBalanceC(19)>>setpagedevice"
+*CNBalanceC 20/20: "<</CNBalanceC(20)>>setpagedevice"
+*CNBalanceC 21/21: "<</CNBalanceC(21)>>setpagedevice"
+*CNBalanceC 22/22: "<</CNBalanceC(22)>>setpagedevice"
+*CNBalanceC 23/23: "<</CNBalanceC(23)>>setpagedevice"
+*CNBalanceC 24/24: "<</CNBalanceC(24)>>setpagedevice"
+*CNBalanceC 25/25: "<</CNBalanceC(25)>>setpagedevice"
+*CNBalanceC 26/26: "<</CNBalanceC(26)>>setpagedevice"
+*CNBalanceC 27/27: "<</CNBalanceC(27)>>setpagedevice"
+*CNBalanceC 28/28: "<</CNBalanceC(28)>>setpagedevice"
+*CNBalanceC 29/29: "<</CNBalanceC(29)>>setpagedevice"
+*CNBalanceC 30/30: "<</CNBalanceC(30)>>setpagedevice"
+*CNBalanceC 31/31: "<</CNBalanceC(31)>>setpagedevice"
+*CNBalanceC 32/32: "<</CNBalanceC(32)>>setpagedevice"
+*CNBalanceC 33/33: "<</CNBalanceC(33)>>setpagedevice"
+*CNBalanceC 34/34: "<</CNBalanceC(34)>>setpagedevice"
+*CNBalanceC 35/35: "<</CNBalanceC(35)>>setpagedevice"
+*CNBalanceC 36/36: "<</CNBalanceC(36)>>setpagedevice"
+*CNBalanceC 37/37: "<</CNBalanceC(37)>>setpagedevice"
+*CNBalanceC 38/38: "<</CNBalanceC(38)>>setpagedevice"
+*CNBalanceC 39/39: "<</CNBalanceC(39)>>setpagedevice"
+*CNBalanceC 40/40: "<</CNBalanceC(40)>>setpagedevice"
+*CNBalanceC 41/41: "<</CNBalanceC(41)>>setpagedevice"
+*CNBalanceC 42/42: "<</CNBalanceC(42)>>setpagedevice"
+*CNBalanceC 43/43: "<</CNBalanceC(43)>>setpagedevice"
+*CNBalanceC 44/44: "<</CNBalanceC(44)>>setpagedevice"
+*CNBalanceC 45/45: "<</CNBalanceC(45)>>setpagedevice"
+*CNBalanceC 46/46: "<</CNBalanceC(46)>>setpagedevice"
+*CNBalanceC 47/47: "<</CNBalanceC(47)>>setpagedevice"
+*CNBalanceC 48/48: "<</CNBalanceC(48)>>setpagedevice"
+*CNBalanceC 49/49: "<</CNBalanceC(49)>>setpagedevice"
+*CNBalanceC 50/50: "<</CNBalanceC(50)>>setpagedevice"
+*CloseUI: *CNBalanceC
+
+*OpenUI *CNBalanceM/Magenta: PickOne
+*DefaultCNBalanceM: 0
+*CNBalanceM -50/-50: "<</CNBalanceM(-50)>>setpagedevice"
+*CNBalanceM -49/-49: "<</CNBalanceM(-49)>>setpagedevice"
+*CNBalanceM -48/-48: "<</CNBalanceM(-48)>>setpagedevice"
+*CNBalanceM -47/-47: "<</CNBalanceM(-47)>>setpagedevice"
+*CNBalanceM -46/-46: "<</CNBalanceM(-46)>>setpagedevice"
+*CNBalanceM -45/-45: "<</CNBalanceM(-45)>>setpagedevice"
+*CNBalanceM -44/-44: "<</CNBalanceM(-44)>>setpagedevice"
+*CNBalanceM -43/-43: "<</CNBalanceM(-43)>>setpagedevice"
+*CNBalanceM -42/-42: "<</CNBalanceM(-42)>>setpagedevice"
+*CNBalanceM -41/-41: "<</CNBalanceM(-41)>>setpagedevice"
+*CNBalanceM -40/-40: "<</CNBalanceM(-40)>>setpagedevice"
+*CNBalanceM -39/-39: "<</CNBalanceM(-39)>>setpagedevice"
+*CNBalanceM -38/-38: "<</CNBalanceM(-38)>>setpagedevice"
+*CNBalanceM -37/-37: "<</CNBalanceM(-37)>>setpagedevice"
+*CNBalanceM -36/-36: "<</CNBalanceM(-36)>>setpagedevice"
+*CNBalanceM -35/-35: "<</CNBalanceM(-35)>>setpagedevice"
+*CNBalanceM -34/-34: "<</CNBalanceM(-34)>>setpagedevice"
+*CNBalanceM -33/-33: "<</CNBalanceM(-33)>>setpagedevice"
+*CNBalanceM -32/-32: "<</CNBalanceM(-32)>>setpagedevice"
+*CNBalanceM -31/-31: "<</CNBalanceM(-31)>>setpagedevice"
+*CNBalanceM -30/-30: "<</CNBalanceM(-30)>>setpagedevice"
+*CNBalanceM -29/-29: "<</CNBalanceM(-29)>>setpagedevice"
+*CNBalanceM -28/-28: "<</CNBalanceM(-28)>>setpagedevice"
+*CNBalanceM -27/-27: "<</CNBalanceM(-27)>>setpagedevice"
+*CNBalanceM -26/-26: "<</CNBalanceM(-26)>>setpagedevice"
+*CNBalanceM -25/-25: "<</CNBalanceM(-25)>>setpagedevice"
+*CNBalanceM -24/-24: "<</CNBalanceM(-24)>>setpagedevice"
+*CNBalanceM -23/-23: "<</CNBalanceM(-23)>>setpagedevice"
+*CNBalanceM -22/-22: "<</CNBalanceM(-22)>>setpagedevice"
+*CNBalanceM -21/-21: "<</CNBalanceM(-21)>>setpagedevice"
+*CNBalanceM -20/-20: "<</CNBalanceM(-20)>>setpagedevice"
+*CNBalanceM -19/-19: "<</CNBalanceM(-19)>>setpagedevice"
+*CNBalanceM -18/-18: "<</CNBalanceM(-18)>>setpagedevice"
+*CNBalanceM -17/-17: "<</CNBalanceM(-17)>>setpagedevice"
+*CNBalanceM -16/-16: "<</CNBalanceM(-16)>>setpagedevice"
+*CNBalanceM -15/-15: "<</CNBalanceM(-15)>>setpagedevice"
+*CNBalanceM -14/-14: "<</CNBalanceM(-14)>>setpagedevice"
+*CNBalanceM -13/-13: "<</CNBalanceM(-13)>>setpagedevice"
+*CNBalanceM -12/-12: "<</CNBalanceM(-12)>>setpagedevice"
+*CNBalanceM -11/-11: "<</CNBalanceM(-11)>>setpagedevice"
+*CNBalanceM -10/-10: "<</CNBalanceM(-10)>>setpagedevice"
+*CNBalanceM -9/-9: "<</CNBalanceM(-9)>>setpagedevice"
+*CNBalanceM -8/-8: "<</CNBalanceM(-8)>>setpagedevice"
+*CNBalanceM -7/-7: "<</CNBalanceM(-7)>>setpagedevice"
+*CNBalanceM -6/-6: "<</CNBalanceM(-6)>>setpagedevice"
+*CNBalanceM -5/-5: "<</CNBalanceM(-5)>>setpagedevice"
+*CNBalanceM -4/-4: "<</CNBalanceM(-4)>>setpagedevice"
+*CNBalanceM -3/-3: "<</CNBalanceM(-3)>>setpagedevice"
+*CNBalanceM -2/-2: "<</CNBalanceM(-2)>>setpagedevice"
+*CNBalanceM -1/-1: "<</CNBalanceM(-1)>>setpagedevice"
+*CNBalanceM 0/0: "<</CNBalanceM(0)>>setpagedevice"
+*CNBalanceM 1/1: "<</CNBalanceM(1)>>setpagedevice"
+*CNBalanceM 2/2: "<</CNBalanceM(2)>>setpagedevice"
+*CNBalanceM 3/3: "<</CNBalanceM(3)>>setpagedevice"
+*CNBalanceM 4/4: "<</CNBalanceM(4)>>setpagedevice"
+*CNBalanceM 5/5: "<</CNBalanceM(5)>>setpagedevice"
+*CNBalanceM 6/6: "<</CNBalanceM(6)>>setpagedevice"
+*CNBalanceM 7/7: "<</CNBalanceM(7)>>setpagedevice"
+*CNBalanceM 8/8: "<</CNBalanceM(8)>>setpagedevice"
+*CNBalanceM 9/9: "<</CNBalanceM(9)>>setpagedevice"
+*CNBalanceM 10/10: "<</CNBalanceM(10)>>setpagedevice"
+*CNBalanceM 11/11: "<</CNBalanceM(11)>>setpagedevice"
+*CNBalanceM 12/12: "<</CNBalanceM(12)>>setpagedevice"
+*CNBalanceM 13/13: "<</CNBalanceM(13)>>setpagedevice"
+*CNBalanceM 14/14: "<</CNBalanceM(14)>>setpagedevice"
+*CNBalanceM 15/15: "<</CNBalanceM(15)>>setpagedevice"
+*CNBalanceM 16/16: "<</CNBalanceM(16)>>setpagedevice"
+*CNBalanceM 17/17: "<</CNBalanceM(17)>>setpagedevice"
+*CNBalanceM 18/18: "<</CNBalanceM(18)>>setpagedevice"
+*CNBalanceM 19/19: "<</CNBalanceM(19)>>setpagedevice"
+*CNBalanceM 20/20: "<</CNBalanceM(20)>>setpagedevice"
+*CNBalanceM 21/21: "<</CNBalanceM(21)>>setpagedevice"
+*CNBalanceM 22/22: "<</CNBalanceM(22)>>setpagedevice"
+*CNBalanceM 23/23: "<</CNBalanceM(23)>>setpagedevice"
+*CNBalanceM 24/24: "<</CNBalanceM(24)>>setpagedevice"
+*CNBalanceM 25/25: "<</CNBalanceM(25)>>setpagedevice"
+*CNBalanceM 26/26: "<</CNBalanceM(26)>>setpagedevice"
+*CNBalanceM 27/27: "<</CNBalanceM(27)>>setpagedevice"
+*CNBalanceM 28/28: "<</CNBalanceM(28)>>setpagedevice"
+*CNBalanceM 29/29: "<</CNBalanceM(29)>>setpagedevice"
+*CNBalanceM 30/30: "<</CNBalanceM(30)>>setpagedevice"
+*CNBalanceM 31/31: "<</CNBalanceM(31)>>setpagedevice"
+*CNBalanceM 32/32: "<</CNBalanceM(32)>>setpagedevice"
+*CNBalanceM 33/33: "<</CNBalanceM(33)>>setpagedevice"
+*CNBalanceM 34/34: "<</CNBalanceM(34)>>setpagedevice"
+*CNBalanceM 35/35: "<</CNBalanceM(35)>>setpagedevice"
+*CNBalanceM 36/36: "<</CNBalanceM(36)>>setpagedevice"
+*CNBalanceM 37/37: "<</CNBalanceM(37)>>setpagedevice"
+*CNBalanceM 38/38: "<</CNBalanceM(38)>>setpagedevice"
+*CNBalanceM 39/39: "<</CNBalanceM(39)>>setpagedevice"
+*CNBalanceM 40/40: "<</CNBalanceM(40)>>setpagedevice"
+*CNBalanceM 41/41: "<</CNBalanceM(41)>>setpagedevice"
+*CNBalanceM 42/42: "<</CNBalanceM(42)>>setpagedevice"
+*CNBalanceM 43/43: "<</CNBalanceM(43)>>setpagedevice"
+*CNBalanceM 44/44: "<</CNBalanceM(44)>>setpagedevice"
+*CNBalanceM 45/45: "<</CNBalanceM(45)>>setpagedevice"
+*CNBalanceM 46/46: "<</CNBalanceM(46)>>setpagedevice"
+*CNBalanceM 47/47: "<</CNBalanceM(47)>>setpagedevice"
+*CNBalanceM 48/48: "<</CNBalanceM(48)>>setpagedevice"
+*CNBalanceM 49/49: "<</CNBalanceM(49)>>setpagedevice"
+*CNBalanceM 50/50: "<</CNBalanceM(50)>>setpagedevice"
+*CloseUI: *CNBalanceM
+
+*OpenUI *CNBalanceY/Yellow: PickOne
+*DefaultCNBalanceY: 0
+*CNBalanceY -50/-50: "<</CNBalanceY(-50)>>setpagedevice"
+*CNBalanceY -49/-49: "<</CNBalanceY(-49)>>setpagedevice"
+*CNBalanceY -48/-48: "<</CNBalanceY(-48)>>setpagedevice"
+*CNBalanceY -47/-47: "<</CNBalanceY(-47)>>setpagedevice"
+*CNBalanceY -46/-46: "<</CNBalanceY(-46)>>setpagedevice"
+*CNBalanceY -45/-45: "<</CNBalanceY(-45)>>setpagedevice"
+*CNBalanceY -44/-44: "<</CNBalanceY(-44)>>setpagedevice"
+*CNBalanceY -43/-43: "<</CNBalanceY(-43)>>setpagedevice"
+*CNBalanceY -42/-42: "<</CNBalanceY(-42)>>setpagedevice"
+*CNBalanceY -41/-41: "<</CNBalanceY(-41)>>setpagedevice"
+*CNBalanceY -40/-40: "<</CNBalanceY(-40)>>setpagedevice"
+*CNBalanceY -39/-39: "<</CNBalanceY(-39)>>setpagedevice"
+*CNBalanceY -38/-38: "<</CNBalanceY(-38)>>setpagedevice"
+*CNBalanceY -37/-37: "<</CNBalanceY(-37)>>setpagedevice"
+*CNBalanceY -36/-36: "<</CNBalanceY(-36)>>setpagedevice"
+*CNBalanceY -35/-35: "<</CNBalanceY(-35)>>setpagedevice"
+*CNBalanceY -34/-34: "<</CNBalanceY(-34)>>setpagedevice"
+*CNBalanceY -33/-33: "<</CNBalanceY(-33)>>setpagedevice"
+*CNBalanceY -32/-32: "<</CNBalanceY(-32)>>setpagedevice"
+*CNBalanceY -31/-31: "<</CNBalanceY(-31)>>setpagedevice"
+*CNBalanceY -30/-30: "<</CNBalanceY(-30)>>setpagedevice"
+*CNBalanceY -29/-29: "<</CNBalanceY(-29)>>setpagedevice"
+*CNBalanceY -28/-28: "<</CNBalanceY(-28)>>setpagedevice"
+*CNBalanceY -27/-27: "<</CNBalanceY(-27)>>setpagedevice"
+*CNBalanceY -26/-26: "<</CNBalanceY(-26)>>setpagedevice"
+*CNBalanceY -25/-25: "<</CNBalanceY(-25)>>setpagedevice"
+*CNBalanceY -24/-24: "<</CNBalanceY(-24)>>setpagedevice"
+*CNBalanceY -23/-23: "<</CNBalanceY(-23)>>setpagedevice"
+*CNBalanceY -22/-22: "<</CNBalanceY(-22)>>setpagedevice"
+*CNBalanceY -21/-21: "<</CNBalanceY(-21)>>setpagedevice"
+*CNBalanceY -20/-20: "<</CNBalanceY(-20)>>setpagedevice"
+*CNBalanceY -19/-19: "<</CNBalanceY(-19)>>setpagedevice"
+*CNBalanceY -18/-18: "<</CNBalanceY(-18)>>setpagedevice"
+*CNBalanceY -17/-17: "<</CNBalanceY(-17)>>setpagedevice"
+*CNBalanceY -16/-16: "<</CNBalanceY(-16)>>setpagedevice"
+*CNBalanceY -15/-15: "<</CNBalanceY(-15)>>setpagedevice"
+*CNBalanceY -14/-14: "<</CNBalanceY(-14)>>setpagedevice"
+*CNBalanceY -13/-13: "<</CNBalanceY(-13)>>setpagedevice"
+*CNBalanceY -12/-12: "<</CNBalanceY(-12)>>setpagedevice"
+*CNBalanceY -11/-11: "<</CNBalanceY(-11)>>setpagedevice"
+*CNBalanceY -10/-10: "<</CNBalanceY(-10)>>setpagedevice"
+*CNBalanceY -9/-9: "<</CNBalanceY(-9)>>setpagedevice"
+*CNBalanceY -8/-8: "<</CNBalanceY(-8)>>setpagedevice"
+*CNBalanceY -7/-7: "<</CNBalanceY(-7)>>setpagedevice"
+*CNBalanceY -6/-6: "<</CNBalanceY(-6)>>setpagedevice"
+*CNBalanceY -5/-5: "<</CNBalanceY(-5)>>setpagedevice"
+*CNBalanceY -4/-4: "<</CNBalanceY(-4)>>setpagedevice"
+*CNBalanceY -3/-3: "<</CNBalanceY(-3)>>setpagedevice"
+*CNBalanceY -2/-2: "<</CNBalanceY(-2)>>setpagedevice"
+*CNBalanceY -1/-1: "<</CNBalanceY(-1)>>setpagedevice"
+*CNBalanceY 0/0: "<</CNBalanceY(0)>>setpagedevice"
+*CNBalanceY 1/1: "<</CNBalanceY(1)>>setpagedevice"
+*CNBalanceY 2/2: "<</CNBalanceY(2)>>setpagedevice"
+*CNBalanceY 3/3: "<</CNBalanceY(3)>>setpagedevice"
+*CNBalanceY 4/4: "<</CNBalanceY(4)>>setpagedevice"
+*CNBalanceY 5/5: "<</CNBalanceY(5)>>setpagedevice"
+*CNBalanceY 6/6: "<</CNBalanceY(6)>>setpagedevice"
+*CNBalanceY 7/7: "<</CNBalanceY(7)>>setpagedevice"
+*CNBalanceY 8/8: "<</CNBalanceY(8)>>setpagedevice"
+*CNBalanceY 9/9: "<</CNBalanceY(9)>>setpagedevice"
+*CNBalanceY 10/10: "<</CNBalanceY(10)>>setpagedevice"
+*CNBalanceY 11/11: "<</CNBalanceY(11)>>setpagedevice"
+*CNBalanceY 12/12: "<</CNBalanceY(12)>>setpagedevice"
+*CNBalanceY 13/13: "<</CNBalanceY(13)>>setpagedevice"
+*CNBalanceY 14/14: "<</CNBalanceY(14)>>setpagedevice"
+*CNBalanceY 15/15: "<</CNBalanceY(15)>>setpagedevice"
+*CNBalanceY 16/16: "<</CNBalanceY(16)>>setpagedevice"
+*CNBalanceY 17/17: "<</CNBalanceY(17)>>setpagedevice"
+*CNBalanceY 18/18: "<</CNBalanceY(18)>>setpagedevice"
+*CNBalanceY 19/19: "<</CNBalanceY(19)>>setpagedevice"
+*CNBalanceY 20/20: "<</CNBalanceY(20)>>setpagedevice"
+*CNBalanceY 21/21: "<</CNBalanceY(21)>>setpagedevice"
+*CNBalanceY 22/22: "<</CNBalanceY(22)>>setpagedevice"
+*CNBalanceY 23/23: "<</CNBalanceY(23)>>setpagedevice"
+*CNBalanceY 24/24: "<</CNBalanceY(24)>>setpagedevice"
+*CNBalanceY 25/25: "<</CNBalanceY(25)>>setpagedevice"
+*CNBalanceY 26/26: "<</CNBalanceY(26)>>setpagedevice"
+*CNBalanceY 27/27: "<</CNBalanceY(27)>>setpagedevice"
+*CNBalanceY 28/28: "<</CNBalanceY(28)>>setpagedevice"
+*CNBalanceY 29/29: "<</CNBalanceY(29)>>setpagedevice"
+*CNBalanceY 30/30: "<</CNBalanceY(30)>>setpagedevice"
+*CNBalanceY 31/31: "<</CNBalanceY(31)>>setpagedevice"
+*CNBalanceY 32/32: "<</CNBalanceY(32)>>setpagedevice"
+*CNBalanceY 33/33: "<</CNBalanceY(33)>>setpagedevice"
+*CNBalanceY 34/34: "<</CNBalanceY(34)>>setpagedevice"
+*CNBalanceY 35/35: "<</CNBalanceY(35)>>setpagedevice"
+*CNBalanceY 36/36: "<</CNBalanceY(36)>>setpagedevice"
+*CNBalanceY 37/37: "<</CNBalanceY(37)>>setpagedevice"
+*CNBalanceY 38/38: "<</CNBalanceY(38)>>setpagedevice"
+*CNBalanceY 39/39: "<</CNBalanceY(39)>>setpagedevice"
+*CNBalanceY 40/40: "<</CNBalanceY(40)>>setpagedevice"
+*CNBalanceY 41/41: "<</CNBalanceY(41)>>setpagedevice"
+*CNBalanceY 42/42: "<</CNBalanceY(42)>>setpagedevice"
+*CNBalanceY 43/43: "<</CNBalanceY(43)>>setpagedevice"
+*CNBalanceY 44/44: "<</CNBalanceY(44)>>setpagedevice"
+*CNBalanceY 45/45: "<</CNBalanceY(45)>>setpagedevice"
+*CNBalanceY 46/46: "<</CNBalanceY(46)>>setpagedevice"
+*CNBalanceY 47/47: "<</CNBalanceY(47)>>setpagedevice"
+*CNBalanceY 48/48: "<</CNBalanceY(48)>>setpagedevice"
+*CNBalanceY 49/49: "<</CNBalanceY(49)>>setpagedevice"
+*CNBalanceY 50/50: "<</CNBalanceY(50)>>setpagedevice"
+*CloseUI: *CNBalanceY
+
+*OpenUI *CNTone/Tone: PickOne
+*DefaultCNTone: 0
+*CNTone -50/-50: "<</CNTone(-50)>>setpagedevice"
+*CNTone -49/-49: "<</CNTone(-49)>>setpagedevice"
+*CNTone -48/-48: "<</CNTone(-48)>>setpagedevice"
+*CNTone -47/-47: "<</CNTone(-47)>>setpagedevice"
+*CNTone -46/-46: "<</CNTone(-46)>>setpagedevice"
+*CNTone -45/-45: "<</CNTone(-45)>>setpagedevice"
+*CNTone -44/-44: "<</CNTone(-44)>>setpagedevice"
+*CNTone -43/-43: "<</CNTone(-43)>>setpagedevice"
+*CNTone -42/-42: "<</CNTone(-42)>>setpagedevice"
+*CNTone -41/-41: "<</CNTone(-41)>>setpagedevice"
+*CNTone -40/-40: "<</CNTone(-40)>>setpagedevice"
+*CNTone -39/-39: "<</CNTone(-39)>>setpagedevice"
+*CNTone -38/-38: "<</CNTone(-38)>>setpagedevice"
+*CNTone -37/-37: "<</CNTone(-37)>>setpagedevice"
+*CNTone -36/-36: "<</CNTone(-36)>>setpagedevice"
+*CNTone -35/-35: "<</CNTone(-35)>>setpagedevice"
+*CNTone -34/-34: "<</CNTone(-34)>>setpagedevice"
+*CNTone -33/-33: "<</CNTone(-33)>>setpagedevice"
+*CNTone -32/-32: "<</CNTone(-32)>>setpagedevice"
+*CNTone -31/-31: "<</CNTone(-31)>>setpagedevice"
+*CNTone -30/-30: "<</CNTone(-30)>>setpagedevice"
+*CNTone -29/-29: "<</CNTone(-29)>>setpagedevice"
+*CNTone -28/-28: "<</CNTone(-28)>>setpagedevice"
+*CNTone -27/-27: "<</CNTone(-27)>>setpagedevice"
+*CNTone -26/-26: "<</CNTone(-26)>>setpagedevice"
+*CNTone -25/-25: "<</CNTone(-25)>>setpagedevice"
+*CNTone -24/-24: "<</CNTone(-24)>>setpagedevice"
+*CNTone -23/-23: "<</CNTone(-23)>>setpagedevice"
+*CNTone -22/-22: "<</CNTone(-22)>>setpagedevice"
+*CNTone -21/-21: "<</CNTone(-21)>>setpagedevice"
+*CNTone -20/-20: "<</CNTone(-20)>>setpagedevice"
+*CNTone -19/-19: "<</CNTone(-19)>>setpagedevice"
+*CNTone -18/-18: "<</CNTone(-18)>>setpagedevice"
+*CNTone -17/-17: "<</CNTone(-17)>>setpagedevice"
+*CNTone -16/-16: "<</CNTone(-16)>>setpagedevice"
+*CNTone -15/-15: "<</CNTone(-15)>>setpagedevice"
+*CNTone -14/-14: "<</CNTone(-14)>>setpagedevice"
+*CNTone -13/-13: "<</CNTone(-13)>>setpagedevice"
+*CNTone -12/-12: "<</CNTone(-12)>>setpagedevice"
+*CNTone -11/-11: "<</CNTone(-11)>>setpagedevice"
+*CNTone -10/-10: "<</CNTone(-10)>>setpagedevice"
+*CNTone -9/-9: "<</CNTone(-9)>>setpagedevice"
+*CNTone -8/-8: "<</CNTone(-8)>>setpagedevice"
+*CNTone -7/-7: "<</CNTone(-7)>>setpagedevice"
+*CNTone -6/-6: "<</CNTone(-6)>>setpagedevice"
+*CNTone -5/-5: "<</CNTone(-5)>>setpagedevice"
+*CNTone -4/-4: "<</CNTone(-4)>>setpagedevice"
+*CNTone -3/-3: "<</CNTone(-3)>>setpagedevice"
+*CNTone -2/-2: "<</CNTone(-2)>>setpagedevice"
+*CNTone -1/-1: "<</CNTone(-1)>>setpagedevice"
+*CNTone 0/0: "<</CNTone(0)>>setpagedevice"
+*CNTone 1/1: "<</CNTone(1)>>setpagedevice"
+*CNTone 2/2: "<</CNTone(2)>>setpagedevice"
+*CNTone 3/3: "<</CNTone(3)>>setpagedevice"
+*CNTone 4/4: "<</CNTone(4)>>setpagedevice"
+*CNTone 5/5: "<</CNTone(5)>>setpagedevice"
+*CNTone 6/6: "<</CNTone(6)>>setpagedevice"
+*CNTone 7/7: "<</CNTone(7)>>setpagedevice"
+*CNTone 8/8: "<</CNTone(8)>>setpagedevice"
+*CNTone 9/9: "<</CNTone(9)>>setpagedevice"
+*CNTone 10/10: "<</CNTone(10)>>setpagedevice"
+*CNTone 11/11: "<</CNTone(11)>>setpagedevice"
+*CNTone 12/12: "<</CNTone(12)>>setpagedevice"
+*CNTone 13/13: "<</CNTone(13)>>setpagedevice"
+*CNTone 14/14: "<</CNTone(14)>>setpagedevice"
+*CNTone 15/15: "<</CNTone(15)>>setpagedevice"
+*CNTone 16/16: "<</CNTone(16)>>setpagedevice"
+*CNTone 17/17: "<</CNTone(17)>>setpagedevice"
+*CNTone 18/18: "<</CNTone(18)>>setpagedevice"
+*CNTone 19/19: "<</CNTone(19)>>setpagedevice"
+*CNTone 20/20: "<</CNTone(20)>>setpagedevice"
+*CNTone 21/21: "<</CNTone(21)>>setpagedevice"
+*CNTone 22/22: "<</CNTone(22)>>setpagedevice"
+*CNTone 23/23: "<</CNTone(23)>>setpagedevice"
+*CNTone 24/24: "<</CNTone(24)>>setpagedevice"
+*CNTone 25/25: "<</CNTone(25)>>setpagedevice"
+*CNTone 26/26: "<</CNTone(26)>>setpagedevice"
+*CNTone 27/27: "<</CNTone(27)>>setpagedevice"
+*CNTone 28/28: "<</CNTone(28)>>setpagedevice"
+*CNTone 29/29: "<</CNTone(29)>>setpagedevice"
+*CNTone 30/30: "<</CNTone(30)>>setpagedevice"
+*CNTone 31/31: "<</CNTone(31)>>setpagedevice"
+*CNTone 32/32: "<</CNTone(32)>>setpagedevice"
+*CNTone 33/33: "<</CNTone(33)>>setpagedevice"
+*CNTone 34/34: "<</CNTone(34)>>setpagedevice"
+*CNTone 35/35: "<</CNTone(35)>>setpagedevice"
+*CNTone 36/36: "<</CNTone(36)>>setpagedevice"
+*CNTone 37/37: "<</CNTone(37)>>setpagedevice"
+*CNTone 38/38: "<</CNTone(38)>>setpagedevice"
+*CNTone 39/39: "<</CNTone(39)>>setpagedevice"
+*CNTone 40/40: "<</CNTone(40)>>setpagedevice"
+*CNTone 41/41: "<</CNTone(41)>>setpagedevice"
+*CNTone 42/42: "<</CNTone(42)>>setpagedevice"
+*CNTone 43/43: "<</CNTone(43)>>setpagedevice"
+*CNTone 44/44: "<</CNTone(44)>>setpagedevice"
+*CNTone 45/45: "<</CNTone(45)>>setpagedevice"
+*CNTone 46/46: "<</CNTone(46)>>setpagedevice"
+*CNTone 47/47: "<</CNTone(47)>>setpagedevice"
+*CNTone 48/48: "<</CNTone(48)>>setpagedevice"
+*CNTone 49/49: "<</CNTone(49)>>setpagedevice"
+*CNTone 50/50: "<</CNTone(50)>>setpagedevice"
+*CloseUI: *CNTone
+
+*OpenUI *CNGamma/Brightness: PickOne
+*DefaultCNGamma: 1.8
+*CNGamma 1.4/Light: "<</CNGamma(1.4)>>setpagedevice"
+*CNGamma 1.8/Normal: "<</CNGamma(1.8)>>setpagedevice"
+*CNGamma 2.2/Dark: "<</CNGamma(2.2)>>setpagedevice"
+*CloseUI: *CNGamma
+
+*OpenUI *CNDensity/Intensity: PickOne
+*DefaultCNDensity: 0
+*CNDensity -50/-50: "<</CNDensity(-50)>>setpagedevice"
+*CNDensity -49/-49: "<</CNDensity(-49)>>setpagedevice"
+*CNDensity -48/-48: "<</CNDensity(-48)>>setpagedevice"
+*CNDensity -47/-47: "<</CNDensity(-47)>>setpagedevice"
+*CNDensity -46/-46: "<</CNDensity(-46)>>setpagedevice"
+*CNDensity -45/-45: "<</CNDensity(-45)>>setpagedevice"
+*CNDensity -44/-44: "<</CNDensity(-44)>>setpagedevice"
+*CNDensity -43/-43: "<</CNDensity(-43)>>setpagedevice"
+*CNDensity -42/-42: "<</CNDensity(-42)>>setpagedevice"
+*CNDensity -41/-41: "<</CNDensity(-41)>>setpagedevice"
+*CNDensity -40/-40: "<</CNDensity(-40)>>setpagedevice"
+*CNDensity -39/-39: "<</CNDensity(-39)>>setpagedevice"
+*CNDensity -38/-38: "<</CNDensity(-38)>>setpagedevice"
+*CNDensity -37/-37: "<</CNDensity(-37)>>setpagedevice"
+*CNDensity -36/-36: "<</CNDensity(-36)>>setpagedevice"
+*CNDensity -35/-35: "<</CNDensity(-35)>>setpagedevice"
+*CNDensity -34/-34: "<</CNDensity(-34)>>setpagedevice"
+*CNDensity -33/-33: "<</CNDensity(-33)>>setpagedevice"
+*CNDensity -32/-32: "<</CNDensity(-32)>>setpagedevice"
+*CNDensity -31/-31: "<</CNDensity(-31)>>setpagedevice"
+*CNDensity -30/-30: "<</CNDensity(-30)>>setpagedevice"
+*CNDensity -29/-29: "<</CNDensity(-29)>>setpagedevice"
+*CNDensity -28/-28: "<</CNDensity(-28)>>setpagedevice"
+*CNDensity -27/-27: "<</CNDensity(-27)>>setpagedevice"
+*CNDensity -26/-26: "<</CNDensity(-26)>>setpagedevice"
+*CNDensity -25/-25: "<</CNDensity(-25)>>setpagedevice"
+*CNDensity -24/-24: "<</CNDensity(-24)>>setpagedevice"
+*CNDensity -23/-23: "<</CNDensity(-23)>>setpagedevice"
+*CNDensity -22/-22: "<</CNDensity(-22)>>setpagedevice"
+*CNDensity -21/-21: "<</CNDensity(-21)>>setpagedevice"
+*CNDensity -20/-20: "<</CNDensity(-20)>>setpagedevice"
+*CNDensity -19/-19: "<</CNDensity(-19)>>setpagedevice"
+*CNDensity -18/-18: "<</CNDensity(-18)>>setpagedevice"
+*CNDensity -17/-17: "<</CNDensity(-17)>>setpagedevice"
+*CNDensity -16/-16: "<</CNDensity(-16)>>setpagedevice"
+*CNDensity -15/-15: "<</CNDensity(-15)>>setpagedevice"
+*CNDensity -14/-14: "<</CNDensity(-14)>>setpagedevice"
+*CNDensity -13/-13: "<</CNDensity(-13)>>setpagedevice"
+*CNDensity -12/-12: "<</CNDensity(-12)>>setpagedevice"
+*CNDensity -11/-11: "<</CNDensity(-11)>>setpagedevice"
+*CNDensity -10/-10: "<</CNDensity(-10)>>setpagedevice"
+*CNDensity -9/-9: "<</CNDensity(-9)>>setpagedevice"
+*CNDensity -8/-8: "<</CNDensity(-8)>>setpagedevice"
+*CNDensity -7/-7: "<</CNDensity(-7)>>setpagedevice"
+*CNDensity -6/-6: "<</CNDensity(-6)>>setpagedevice"
+*CNDensity -5/-5: "<</CNDensity(-5)>>setpagedevice"
+*CNDensity -4/-4: "<</CNDensity(-4)>>setpagedevice"
+*CNDensity -3/-3: "<</CNDensity(-3)>>setpagedevice"
+*CNDensity -2/-2: "<</CNDensity(-2)>>setpagedevice"
+*CNDensity -1/-1: "<</CNDensity(-1)>>setpagedevice"
+*CNDensity 0/0: "<</CNDensity(0)>>setpagedevice"
+*CNDensity 1/1: "<</CNDensity(1)>>setpagedevice"
+*CNDensity 2/2: "<</CNDensity(2)>>setpagedevice"
+*CNDensity 3/3: "<</CNDensity(3)>>setpagedevice"
+*CNDensity 4/4: "<</CNDensity(4)>>setpagedevice"
+*CNDensity 5/5: "<</CNDensity(5)>>setpagedevice"
+*CNDensity 6/6: "<</CNDensity(6)>>setpagedevice"
+*CNDensity 7/7: "<</CNDensity(7)>>setpagedevice"
+*CNDensity 8/8: "<</CNDensity(8)>>setpagedevice"
+*CNDensity 9/9: "<</CNDensity(9)>>setpagedevice"
+*CNDensity 10/10: "<</CNDensity(10)>>setpagedevice"
+*CNDensity 11/11: "<</CNDensity(11)>>setpagedevice"
+*CNDensity 12/12: "<</CNDensity(12)>>setpagedevice"
+*CNDensity 13/13: "<</CNDensity(13)>>setpagedevice"
+*CNDensity 14/14: "<</CNDensity(14)>>setpagedevice"
+*CNDensity 15/15: "<</CNDensity(15)>>setpagedevice"
+*CNDensity 16/16: "<</CNDensity(16)>>setpagedevice"
+*CNDensity 17/17: "<</CNDensity(17)>>setpagedevice"
+*CNDensity 18/18: "<</CNDensity(18)>>setpagedevice"
+*CNDensity 19/19: "<</CNDensity(19)>>setpagedevice"
+*CNDensity 20/20: "<</CNDensity(20)>>setpagedevice"
+*CNDensity 21/21: "<</CNDensity(21)>>setpagedevice"
+*CNDensity 22/22: "<</CNDensity(22)>>setpagedevice"
+*CNDensity 23/23: "<</CNDensity(23)>>setpagedevice"
+*CNDensity 24/24: "<</CNDensity(24)>>setpagedevice"
+*CNDensity 25/25: "<</CNDensity(25)>>setpagedevice"
+*CNDensity 26/26: "<</CNDensity(26)>>setpagedevice"
+*CNDensity 27/27: "<</CNDensity(27)>>setpagedevice"
+*CNDensity 28/28: "<</CNDensity(28)>>setpagedevice"
+*CNDensity 29/29: "<</CNDensity(29)>>setpagedevice"
+*CNDensity 30/30: "<</CNDensity(30)>>setpagedevice"
+*CNDensity 31/31: "<</CNDensity(31)>>setpagedevice"
+*CNDensity 32/32: "<</CNDensity(32)>>setpagedevice"
+*CNDensity 33/33: "<</CNDensity(33)>>setpagedevice"
+*CNDensity 34/34: "<</CNDensity(34)>>setpagedevice"
+*CNDensity 35/35: "<</CNDensity(35)>>setpagedevice"
+*CNDensity 36/36: "<</CNDensity(36)>>setpagedevice"
+*CNDensity 37/37: "<</CNDensity(37)>>setpagedevice"
+*CNDensity 38/38: "<</CNDensity(38)>>setpagedevice"
+*CNDensity 39/39: "<</CNDensity(39)>>setpagedevice"
+*CNDensity 40/40: "<</CNDensity(40)>>setpagedevice"
+*CNDensity 41/41: "<</CNDensity(41)>>setpagedevice"
+*CNDensity 42/42: "<</CNDensity(42)>>setpagedevice"
+*CNDensity 43/43: "<</CNDensity(43)>>setpagedevice"
+*CNDensity 44/44: "<</CNDensity(44)>>setpagedevice"
+*CNDensity 45/45: "<</CNDensity(45)>>setpagedevice"
+*CNDensity 46/46: "<</CNDensity(46)>>setpagedevice"
+*CNDensity 47/47: "<</CNDensity(47)>>setpagedevice"
+*CNDensity 48/48: "<</CNDensity(48)>>setpagedevice"
+*CNDensity 49/49: "<</CNDensity(49)>>setpagedevice"
+*CNDensity 50/50: "<</CNDensity(50)>>setpagedevice"
+*CloseUI: *CNDensity
+
+*OpenUI *CNContrast/Contrast: PickOne
+*DefaultCNContrast: 0
+*CNContrast -50/-50: "<</CNContrast(-50)>>setpagedevice"
+*CNContrast -49/-49: "<</CNContrast(-49)>>setpagedevice"
+*CNContrast -48/-48: "<</CNContrast(-48)>>setpagedevice"
+*CNContrast -47/-47: "<</CNContrast(-47)>>setpagedevice"
+*CNContrast -46/-46: "<</CNContrast(-46)>>setpagedevice"
+*CNContrast -45/-45: "<</CNContrast(-45)>>setpagedevice"
+*CNContrast -44/-44: "<</CNContrast(-44)>>setpagedevice"
+*CNContrast -43/-43: "<</CNContrast(-43)>>setpagedevice"
+*CNContrast -42/-42: "<</CNContrast(-42)>>setpagedevice"
+*CNContrast -41/-41: "<</CNContrast(-41)>>setpagedevice"
+*CNContrast -40/-40: "<</CNContrast(-40)>>setpagedevice"
+*CNContrast -39/-39: "<</CNContrast(-39)>>setpagedevice"
+*CNContrast -38/-38: "<</CNContrast(-38)>>setpagedevice"
+*CNContrast -37/-37: "<</CNContrast(-37)>>setpagedevice"
+*CNContrast -36/-36: "<</CNContrast(-36)>>setpagedevice"
+*CNContrast -35/-35: "<</CNContrast(-35)>>setpagedevice"
+*CNContrast -34/-34: "<</CNContrast(-34)>>setpagedevice"
+*CNContrast -33/-33: "<</CNContrast(-33)>>setpagedevice"
+*CNContrast -32/-32: "<</CNContrast(-32)>>setpagedevice"
+*CNContrast -31/-31: "<</CNContrast(-31)>>setpagedevice"
+*CNContrast -30/-30: "<</CNContrast(-30)>>setpagedevice"
+*CNContrast -29/-29: "<</CNContrast(-29)>>setpagedevice"
+*CNContrast -28/-28: "<</CNContrast(-28)>>setpagedevice"
+*CNContrast -27/-27: "<</CNContrast(-27)>>setpagedevice"
+*CNContrast -26/-26: "<</CNContrast(-26)>>setpagedevice"
+*CNContrast -25/-25: "<</CNContrast(-25)>>setpagedevice"
+*CNContrast -24/-24: "<</CNContrast(-24)>>setpagedevice"
+*CNContrast -23/-23: "<</CNContrast(-23)>>setpagedevice"
+*CNContrast -22/-22: "<</CNContrast(-22)>>setpagedevice"
+*CNContrast -21/-21: "<</CNContrast(-21)>>setpagedevice"
+*CNContrast -20/-20: "<</CNContrast(-20)>>setpagedevice"
+*CNContrast -19/-19: "<</CNContrast(-19)>>setpagedevice"
+*CNContrast -18/-18: "<</CNContrast(-18)>>setpagedevice"
+*CNContrast -17/-17: "<</CNContrast(-17)>>setpagedevice"
+*CNContrast -16/-16: "<</CNContrast(-16)>>setpagedevice"
+*CNContrast -15/-15: "<</CNContrast(-15)>>setpagedevice"
+*CNContrast -14/-14: "<</CNContrast(-14)>>setpagedevice"
+*CNContrast -13/-13: "<</CNContrast(-13)>>setpagedevice"
+*CNContrast -12/-12: "<</CNContrast(-12)>>setpagedevice"
+*CNContrast -11/-11: "<</CNContrast(-11)>>setpagedevice"
+*CNContrast -10/-10: "<</CNContrast(-10)>>setpagedevice"
+*CNContrast -9/-9: "<</CNContrast(-9)>>setpagedevice"
+*CNContrast -8/-8: "<</CNContrast(-8)>>setpagedevice"
+*CNContrast -7/-7: "<</CNContrast(-7)>>setpagedevice"
+*CNContrast -6/-6: "<</CNContrast(-6)>>setpagedevice"
+*CNContrast -5/-5: "<</CNContrast(-5)>>setpagedevice"
+*CNContrast -4/-4: "<</CNContrast(-4)>>setpagedevice"
+*CNContrast -3/-3: "<</CNContrast(-3)>>setpagedevice"
+*CNContrast -2/-2: "<</CNContrast(-2)>>setpagedevice"
+*CNContrast -1/-1: "<</CNContrast(-1)>>setpagedevice"
+*CNContrast 0/0: "<</CNContrast(0)>>setpagedevice"
+*CNContrast 1/1: "<</CNContrast(1)>>setpagedevice"
+*CNContrast 2/2: "<</CNContrast(2)>>setpagedevice"
+*CNContrast 3/3: "<</CNContrast(3)>>setpagedevice"
+*CNContrast 4/4: "<</CNContrast(4)>>setpagedevice"
+*CNContrast 5/5: "<</CNContrast(5)>>setpagedevice"
+*CNContrast 6/6: "<</CNContrast(6)>>setpagedevice"
+*CNContrast 7/7: "<</CNContrast(7)>>setpagedevice"
+*CNContrast 8/8: "<</CNContrast(8)>>setpagedevice"
+*CNContrast 9/9: "<</CNContrast(9)>>setpagedevice"
+*CNContrast 10/10: "<</CNContrast(10)>>setpagedevice"
+*CNContrast 11/11: "<</CNContrast(11)>>setpagedevice"
+*CNContrast 12/12: "<</CNContrast(12)>>setpagedevice"
+*CNContrast 13/13: "<</CNContrast(13)>>setpagedevice"
+*CNContrast 14/14: "<</CNContrast(14)>>setpagedevice"
+*CNContrast 15/15: "<</CNContrast(15)>>setpagedevice"
+*CNContrast 16/16: "<</CNContrast(16)>>setpagedevice"
+*CNContrast 17/17: "<</CNContrast(17)>>setpagedevice"
+*CNContrast 18/18: "<</CNContrast(18)>>setpagedevice"
+*CNContrast 19/19: "<</CNContrast(19)>>setpagedevice"
+*CNContrast 20/20: "<</CNContrast(20)>>setpagedevice"
+*CNContrast 21/21: "<</CNContrast(21)>>setpagedevice"
+*CNContrast 22/22: "<</CNContrast(22)>>setpagedevice"
+*CNContrast 23/23: "<</CNContrast(23)>>setpagedevice"
+*CNContrast 24/24: "<</CNContrast(24)>>setpagedevice"
+*CNContrast 25/25: "<</CNContrast(25)>>setpagedevice"
+*CNContrast 26/26: "<</CNContrast(26)>>setpagedevice"
+*CNContrast 27/27: "<</CNContrast(27)>>setpagedevice"
+*CNContrast 28/28: "<</CNContrast(28)>>setpagedevice"
+*CNContrast 29/29: "<</CNContrast(29)>>setpagedevice"
+*CNContrast 30/30: "<</CNContrast(30)>>setpagedevice"
+*CNContrast 31/31: "<</CNContrast(31)>>setpagedevice"
+*CNContrast 32/32: "<</CNContrast(32)>>setpagedevice"
+*CNContrast 33/33: "<</CNContrast(33)>>setpagedevice"
+*CNContrast 34/34: "<</CNContrast(34)>>setpagedevice"
+*CNContrast 35/35: "<</CNContrast(35)>>setpagedevice"
+*CNContrast 36/36: "<</CNContrast(36)>>setpagedevice"
+*CNContrast 37/37: "<</CNContrast(37)>>setpagedevice"
+*CNContrast 38/38: "<</CNContrast(38)>>setpagedevice"
+*CNContrast 39/39: "<</CNContrast(39)>>setpagedevice"
+*CNContrast 40/40: "<</CNContrast(40)>>setpagedevice"
+*CNContrast 41/41: "<</CNContrast(41)>>setpagedevice"
+*CNContrast 42/42: "<</CNContrast(42)>>setpagedevice"
+*CNContrast 43/43: "<</CNContrast(43)>>setpagedevice"
+*CNContrast 44/44: "<</CNContrast(44)>>setpagedevice"
+*CNContrast 45/45: "<</CNContrast(45)>>setpagedevice"
+*CNContrast 46/46: "<</CNContrast(46)>>setpagedevice"
+*CNContrast 47/47: "<</CNContrast(47)>>setpagedevice"
+*CNContrast 48/48: "<</CNContrast(48)>>setpagedevice"
+*CNContrast 49/49: "<</CNContrast(49)>>setpagedevice"
+*CNContrast 50/50: "<</CNContrast(50)>>setpagedevice"
+*CloseUI: *CNContrast
+
+*CloseGroup: *CNColorAdjust
+
+
+*OpenGroup: *CNGeneral/General
+
+*OpenUI *CNDetectPaperWidth/Detect paper width: Boolean
+*DefaultCNDetectPaperWidth: False
+*CNDetectPaperWidth True/ON: "<</CNDetectPaperWidth(True)>>setpagedevice"
+*CNDetectPaperWidth False/OFF: "<</CNDetectPaperWidth(False)>>setpagedevice"
+*CloseUI: *CNDetectPaperWidth
+
+*OpenUI *Resolution/Output Resolution: PickOne
+*DefaultResolution: 600dpi
+*Resolution 600dpi/600 dpi: "<</HWResolution[600 600]>>setpagedevice"
+*CloseUI: *Resolution
+
+*OpenUI *ColorModel/Color Model: PickOne
+*DefaultColorModel: rgb
+*ColorModel rgb/RGB: "<</cupsColorOrder 0/cupsColorSpace 1/cupsCompression 0/cupsBitsPerColor 8>>setpagedevice"
+*CloseUI: *ColorModel
+
+*CloseGroup: *CNGeneral
+
+
+
+*UIConstraints: *MediaType otherfineart *PageSize Letter.bl
+*UIConstraints: *PageSize Letter.bl *MediaType otherfineart
+*UIConstraints: *MediaType otherfineart *PageSize ledger.bl
+*UIConstraints: *PageSize ledger.bl *MediaType otherfineart
+*UIConstraints: *MediaType otherfineart *PageSize A4.bl
+*UIConstraints: *PageSize A4.bl *MediaType otherfineart
+*UIConstraints: *MediaType otherfineart *PageSize a3.bl
+*UIConstraints: *PageSize a3.bl *MediaType otherfineart
+*UIConstraints: *MediaType otherfineart *PageSize a3plus.bl
+*UIConstraints: *PageSize a3plus.bl *MediaType otherfineart
+*UIConstraints: *MediaType otherfineart *PageSize 4X6.bl
+*UIConstraints: *PageSize 4X6.bl *MediaType otherfineart
+*UIConstraints: *MediaType otherfineart *PageSize 5X7.bl
+*UIConstraints: *PageSize 5X7.bl *MediaType otherfineart
+*UIConstraints: *MediaType otherfineart *PageSize 8X10.bl
+*UIConstraints: *PageSize 8X10.bl *MediaType otherfineart
+*UIConstraints: *MediaType otherfineart *PageSize 10X12.bl
+*UIConstraints: *PageSize 10X12.bl *MediaType otherfineart
+*UIConstraints: *MediaType otherfineart *PageSize l.bl
+*UIConstraints: *PageSize l.bl *MediaType otherfineart
+*UIConstraints: *MediaType otherfineart *PageSize 2l.bl
+*UIConstraints: *PageSize 2l.bl *MediaType otherfineart
+*UIConstraints: *MediaType otherfineart *PageSize postcard.bl
+*UIConstraints: *PageSize postcard.bl *MediaType otherfineart
+*UIConstraints: *MediaType envelope *PageSize Letter.bl
+*UIConstraints: *PageSize Letter.bl *MediaType envelope
+*UIConstraints: *MediaType envelope *PageSize ledger.bl
+*UIConstraints: *PageSize ledger.bl *MediaType envelope
+*UIConstraints: *MediaType envelope *PageSize A4.bl
+*UIConstraints: *PageSize A4.bl *MediaType envelope
+*UIConstraints: *MediaType envelope *PageSize a3.bl
+*UIConstraints: *PageSize a3.bl *MediaType envelope
+*UIConstraints: *MediaType envelope *PageSize a3plus.bl
+*UIConstraints: *PageSize a3plus.bl *MediaType envelope
+*UIConstraints: *MediaType envelope *PageSize 4X6.bl
+*UIConstraints: *PageSize 4X6.bl *MediaType envelope
+*UIConstraints: *MediaType envelope *PageSize 5X7.bl
+*UIConstraints: *PageSize 5X7.bl *MediaType envelope
+*UIConstraints: *MediaType envelope *PageSize 8X10.bl
+*UIConstraints: *PageSize 8X10.bl *MediaType envelope
+*UIConstraints: *MediaType envelope *PageSize 10X12.bl
+*UIConstraints: *PageSize 10X12.bl *MediaType envelope
+*UIConstraints: *MediaType envelope *PageSize l.bl
+*UIConstraints: *PageSize l.bl *MediaType envelope
+*UIConstraints: *MediaType envelope *PageSize 2l.bl
+*UIConstraints: *PageSize 2l.bl *MediaType envelope
+*UIConstraints: *MediaType envelope *PageSize postcard.bl
+*UIConstraints: *PageSize postcard.bl *MediaType envelope
+*UIConstraints: *MediaType highres *PageSize Letter.bl
+*UIConstraints: *PageSize Letter.bl *MediaType highres
+*UIConstraints: *MediaType highres *PageSize ledger.bl
+*UIConstraints: *PageSize ledger.bl *MediaType highres
+*UIConstraints: *MediaType highres *PageSize A4.bl
+*UIConstraints: *PageSize A4.bl *MediaType highres
+*UIConstraints: *MediaType highres *PageSize a3.bl
+*UIConstraints: *PageSize a3.bl *MediaType highres
+*UIConstraints: *MediaType highres *PageSize a3plus.bl
+*UIConstraints: *PageSize a3plus.bl *MediaType highres
+*UIConstraints: *MediaType highres *PageSize 4X6.bl
+*UIConstraints: *PageSize 4X6.bl *MediaType highres
+*UIConstraints: *MediaType highres *PageSize 5X7.bl
+*UIConstraints: *PageSize 5X7.bl *MediaType highres
+*UIConstraints: *MediaType highres *PageSize 8X10.bl
+*UIConstraints: *PageSize 8X10.bl *MediaType highres
+*UIConstraints: *MediaType highres *PageSize 10X12.bl
+*UIConstraints: *PageSize 10X12.bl *MediaType highres
+*UIConstraints: *MediaType highres *PageSize l.bl
+*UIConstraints: *PageSize l.bl *MediaType highres
+*UIConstraints: *MediaType highres *PageSize 2l.bl
+*UIConstraints: *PageSize 2l.bl *MediaType highres
+*UIConstraints: *MediaType highres *PageSize postcard.bl
+*UIConstraints: *PageSize postcard.bl *MediaType highres
+*UIConstraints: *MediaType tshirt *PageSize Letter.bl
+*UIConstraints: *PageSize Letter.bl *MediaType tshirt
+*UIConstraints: *MediaType tshirt *PageSize ledger.bl
+*UIConstraints: *PageSize ledger.bl *MediaType tshirt
+*UIConstraints: *MediaType tshirt *PageSize A4.bl
+*UIConstraints: *PageSize A4.bl *MediaType tshirt
+*UIConstraints: *MediaType tshirt *PageSize a3.bl
+*UIConstraints: *PageSize a3.bl *MediaType tshirt
+*UIConstraints: *MediaType tshirt *PageSize a3plus.bl
+*UIConstraints: *PageSize a3plus.bl *MediaType tshirt
+*UIConstraints: *MediaType tshirt *PageSize 4X6.bl
+*UIConstraints: *PageSize 4X6.bl *MediaType tshirt
+*UIConstraints: *MediaType tshirt *PageSize 5X7.bl
+*UIConstraints: *PageSize 5X7.bl *MediaType tshirt
+*UIConstraints: *MediaType tshirt *PageSize 8X10.bl
+*UIConstraints: *PageSize 8X10.bl *MediaType tshirt
+*UIConstraints: *MediaType tshirt *PageSize 10X12.bl
+*UIConstraints: *PageSize 10X12.bl *MediaType tshirt
+*UIConstraints: *MediaType tshirt *PageSize l.bl
+*UIConstraints: *PageSize l.bl *MediaType tshirt
+*UIConstraints: *MediaType tshirt *PageSize 2l.bl
+*UIConstraints: *PageSize 2l.bl *MediaType tshirt
+*UIConstraints: *MediaType tshirt *PageSize postcard.bl
+*UIConstraints: *PageSize postcard.bl *MediaType tshirt
+
+*UIConstraints: *CNTone -50 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone -50
+*UIConstraints: *CNTone -49 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone -49
+*UIConstraints: *CNTone -48 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone -48
+*UIConstraints: *CNTone -47 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone -47
+*UIConstraints: *CNTone -46 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone -46
+*UIConstraints: *CNTone -45 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone -45
+*UIConstraints: *CNTone -44 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone -44
+*UIConstraints: *CNTone -43 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone -43
+*UIConstraints: *CNTone -42 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone -42
+*UIConstraints: *CNTone -41 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone -41
+*UIConstraints: *CNTone -40 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone -40
+*UIConstraints: *CNTone -39 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone -39
+*UIConstraints: *CNTone -38 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone -38
+*UIConstraints: *CNTone -37 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone -37
+*UIConstraints: *CNTone -36 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone -36
+*UIConstraints: *CNTone -35 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone -35
+*UIConstraints: *CNTone -34 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone -34
+*UIConstraints: *CNTone -33 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone -33
+*UIConstraints: *CNTone -32 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone -32
+*UIConstraints: *CNTone -31 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone -31
+*UIConstraints: *CNTone -30 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone -30
+*UIConstraints: *CNTone -29 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone -29
+*UIConstraints: *CNTone -28 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone -28
+*UIConstraints: *CNTone -27 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone -27
+*UIConstraints: *CNTone -26 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone -26
+*UIConstraints: *CNTone -25 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone -25
+*UIConstraints: *CNTone -24 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone -24
+*UIConstraints: *CNTone -23 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone -23
+*UIConstraints: *CNTone -22 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone -22
+*UIConstraints: *CNTone -21 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone -21
+*UIConstraints: *CNTone -20 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone -20
+*UIConstraints: *CNTone -19 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone -19
+*UIConstraints: *CNTone -18 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone -18
+*UIConstraints: *CNTone -17 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone -17
+*UIConstraints: *CNTone -16 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone -16
+*UIConstraints: *CNTone -15 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone -15
+*UIConstraints: *CNTone -14 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone -14
+*UIConstraints: *CNTone -13 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone -13
+*UIConstraints: *CNTone -12 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone -12
+*UIConstraints: *CNTone -11 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone -11
+*UIConstraints: *CNTone -10 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone -10
+*UIConstraints: *CNTone -9 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone -9
+*UIConstraints: *CNTone -8 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone -8
+*UIConstraints: *CNTone -7 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone -7
+*UIConstraints: *CNTone -6 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone -6
+*UIConstraints: *CNTone -5 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone -5
+*UIConstraints: *CNTone -4 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone -4
+*UIConstraints: *CNTone -3 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone -3
+*UIConstraints: *CNTone -2 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone -2
+*UIConstraints: *CNTone -1 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone -1
+*UIConstraints: *CNTone 1 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone 1
+*UIConstraints: *CNTone 2 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone 2
+*UIConstraints: *CNTone 3 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone 3
+*UIConstraints: *CNTone 4 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone 4
+*UIConstraints: *CNTone 5 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone 5
+*UIConstraints: *CNTone 6 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone 6
+*UIConstraints: *CNTone 7 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone 7
+*UIConstraints: *CNTone 8 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone 8
+*UIConstraints: *CNTone 9 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone 9
+*UIConstraints: *CNTone 10 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone 10
+*UIConstraints: *CNTone 11 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone 11
+*UIConstraints: *CNTone 12 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone 12
+*UIConstraints: *CNTone 13 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone 13
+*UIConstraints: *CNTone 14 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone 14
+*UIConstraints: *CNTone 15 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone 15
+*UIConstraints: *CNTone 16 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone 16
+*UIConstraints: *CNTone 17 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone 17
+*UIConstraints: *CNTone 18 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone 18
+*UIConstraints: *CNTone 19 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone 19
+*UIConstraints: *CNTone 20 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone 20
+*UIConstraints: *CNTone 21 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone 21
+*UIConstraints: *CNTone 22 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone 22
+*UIConstraints: *CNTone 23 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone 23
+*UIConstraints: *CNTone 24 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone 24
+*UIConstraints: *CNTone 25 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone 25
+*UIConstraints: *CNTone 26 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone 26
+*UIConstraints: *CNTone 27 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone 27
+*UIConstraints: *CNTone 28 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone 28
+*UIConstraints: *CNTone 29 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone 29
+*UIConstraints: *CNTone 30 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone 30
+*UIConstraints: *CNTone 31 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone 31
+*UIConstraints: *CNTone 32 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone 32
+*UIConstraints: *CNTone 33 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone 33
+*UIConstraints: *CNTone 34 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone 34
+*UIConstraints: *CNTone 35 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone 35
+*UIConstraints: *CNTone 36 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone 36
+*UIConstraints: *CNTone 37 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone 37
+*UIConstraints: *CNTone 38 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone 38
+*UIConstraints: *CNTone 39 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone 39
+*UIConstraints: *CNTone 40 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone 40
+*UIConstraints: *CNTone 41 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone 41
+*UIConstraints: *CNTone 42 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone 42
+*UIConstraints: *CNTone 43 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone 43
+*UIConstraints: *CNTone 44 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone 44
+*UIConstraints: *CNTone 45 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone 45
+*UIConstraints: *CNTone 46 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone 46
+*UIConstraints: *CNTone 47 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone 47
+*UIConstraints: *CNTone 48 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone 48
+*UIConstraints: *CNTone 49 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone 49
+*UIConstraints: *CNTone 50 *CNGrayscale False
+*UIConstraints: *CNGrayscale False *CNTone 50
+
+*DefaultFont: Courier
+*Font Courier: Standard "(001.001)" Standard ROM
+
+*%CNPpdToOptKey PageSize --papersize
+*%CNPpdToOptKey MediaType --media
+*%CNPpdToOptKey InputSlot --paperload
+*%CNPpdToOptKey CNCartridge --cartridge
+*%CNPpdToOptKey CNQuality --quality
+*%CNPpdToOptKey CNHalftoning --halftoning
+*%CNPpdToOptKey CNRenderIntent --renderintent
+*%CNPpdToOptKey CNGamma --gamma
+*%CNPpdToOptKey CNBalanceC --balance_c
+*%CNPpdToOptKey CNBalanceM --balance_m
+*%CNPpdToOptKey CNBalanceY --balance_y
+*%CNPpdToOptKey CNDensity --density
+*%CNPpdToOptKey CNGrayscale --grayscale
+*%CNPpdToOptKey CNCopies --copies
+*%CNPpdToOptKey CNContrast --contrast
+*%CNPpdToOptKey CNExtension --extension
+*%CNPpdToOptKey CNTone --tone
+*%CNPpdToOptKey CNDetectPaperWidth --detectpaperwidth
+
+*%CNPpdOptions EnableDEVURIOption
+*%CNPpdOptions EnableFrontEnd
+*%CNPpdOptions EnableCNGPIJMNT
+
+*%CNMaintenanceCommand: com.canon.autoalignment="@TestPrint=Regi_Auto1"
+*%CNMaintenanceCommand: PrintSelfTestPage="@TestPrint=NozzleCheck"
+*%CNMaintenanceCommand: Clean_all="@Cleaning=1ALL"
+*%CNMaintenanceCommand: ReportStatus=""
+
+*%
+*% internalversion : 4.10.01.001
+*%
+
+*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+*% Translation: German (de)
+*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+*de.Translation CNMain/Optionen: ""
+*de.Translation MediaType/Medientyp: PickOne: ""
+*de.MediaType plain/Normalpapier: "<</MediaType(plain)>>setpagedevice": ""
+*de.MediaType glossygold/Fotoglanzpapier Plus II: "<</MediaType(glossygold)>>setpagedevice": ""
+*de.MediaType proplatinum/Professional Fotopapier Platin: "<</MediaType(proplatinum)>>setpagedevice": ""
+*de.MediaType luster/Professional Fotopapier Hochgl.: "<</MediaType(luster)>>setpagedevice": ""
+*de.MediaType semigloss/Photo Papier Plus, Seiden-Glanz: "<</MediaType(semigloss)>>setpagedevice": ""
+*de.MediaType glossystandard/Foto Glanzpapier: "<</MediaType(glossystandard)>>setpagedevice": ""
+*de.MediaType matte/Fotopapier Matt: "<</MediaType(matte)>>setpagedevice": ""
+*de.MediaType otherfineart/Anderes Fine Art-Papier: "<</MediaType(otherfineart)>>setpagedevice": ""
+*de.MediaType envelope/Umschlag: "<</MediaType(envelope)>>setpagedevice": ""
+*de.MediaType postcardaddress/Hagaki A: "<</MediaType(postcardaddress)>>setpagedevice": ""
+*de.MediaType ijpostcard/Ink Jet Hagaki: "<</MediaType(ijpostcard)>>setpagedevice": ""
+*de.MediaType glossypost/Hagaki K: "<</MediaType(glossypost)>>setpagedevice": ""
+*de.MediaType postcard/Hagaki: "<</MediaType(postcard)>>setpagedevice": ""
+*de.MediaType highres/Hochauflösendes Papier: "<</MediaType(highres)>>setpagedevice": ""
+*de.MediaType tshirt/T-Shirt-Transferfolie: "<</MediaType(tshirt)>>setpagedevice": ""
+*de.MediaType otherphoto/Anderes Fotopapier: "<</MediaType(otherphoto)>>setpagedevice": ""
+*de.Translation InputSlot/Papierzufuhr: PickOne: ""
+*de.InputSlot asf/Hinteres Fach: "<</MediaPosition 0>>setpagedevice": ""
+*de.Translation CNQuality/Druckqualität: PickOne: ""
+*de.CNQuality 1/1(Hoch): "<</CNQuality(1)>>setpagedevice": ""
+*de.CNQuality 4/4(Entwurf): "<</CNQuality(4)>>setpagedevice": ""
+*de.Translation CNGrayscale/Graustufen drucken: Boolean: ""
+*de.Translation CNPagesetup/Seite einrichten: ""
+*de.Translation PageSize/Seitenformat: PickOne: ""
+*de.PageSize Letter/Letter [215.9x279.4mm 8.50"x11.00"]: "<</CNPageSizeName(Letter)/PageSize[612 792]/ImagingBBox null>>setpagedevice": ""
+*de.PageSize Letter.bl/Letter (randlos) [215.9x279.4mm 8.50"x11.00"]: "<</CNPageSizeName(Letter.bl)/PageSize[612 792]/ImagingBBox null>>setpagedevice": ""
+*de.PageSize Legal/Legal [215.9x355.6mm 8.50"x14.00"]: "<</CNPageSizeName(Legal)/PageSize[612 1008]/ImagingBBox null>>setpagedevice": ""
+*de.PageSize ledger/11"x17" [279.4x431.8mm 11.00"x17.00"]: "<</CNPageSizeName(ledger)/PageSize[792 1224]/ImagingBBox null>>setpagedevice": ""
+*de.PageSize ledger.bl/11"x17" (randlos) [279.4x431.8mm 11.00"x17.00"]: "<</CNPageSizeName(ledger.bl)/PageSize[792 1224]/ImagingBBox null>>setpagedevice": ""
+*de.PageSize A5/A5 [148.0x210.0mm 5.83"x8.27"]: "<</CNPageSizeName(A5)/PageSize[420 595]/ImagingBBox null>>setpagedevice": ""
+*de.PageSize A4/A4 [210.0x297.0mm 8.27"x11.69"]: "<</CNPageSizeName(A4)/PageSize[595 842]/ImagingBBox null>>setpagedevice": ""
+*de.PageSize A4.bl/A4 (randlos) [210.0x297.0mm 8.27"x11.69"]: "<</CNPageSizeName(A4.bl)/PageSize[595 842]/ImagingBBox null>>setpagedevice": ""
+*de.PageSize a3/A3 [297.0x420.0mm 11.69"x16.54"]: "<</CNPageSizeName(a3)/PageSize[842 1191]/ImagingBBox null>>setpagedevice": ""
+*de.PageSize a3.bl/A3 (randlos) [297.0x420.0mm 11.69"x16.54"]: "<</CNPageSizeName(a3.bl)/PageSize[842 1191]/ImagingBBox null>>setpagedevice": ""
+*de.PageSize a3plus/A3+ [329.0x483.0mm 12.95"x19.02"]: "<</CNPageSizeName(a3plus)/PageSize[933 1369]/ImagingBBox null>>setpagedevice": ""
+*de.PageSize a3plus.bl/A3+ (randlos) [329.0x483.0mm 12.95"x19.02"]: "<</CNPageSizeName(a3plus.bl)/PageSize[933 1369]/ImagingBBox null>>setpagedevice": ""
+*de.PageSize B5/B5 [182.0x257.0mm 7.17"x10.12"]: "<</CNPageSizeName(B5)/PageSize[516 729]/ImagingBBox null>>setpagedevice": ""
+*de.PageSize b4/B4 [257.0x364.0mm 10.12"x14.33"]: "<</CNPageSizeName(b4)/PageSize[729 1032]/ImagingBBox null>>setpagedevice": ""
+*de.PageSize 4X6/4"x6" [101.6x152.4mm 4.00"x6.00"]: "<</CNPageSizeName(4X6)/PageSize[288 432]/ImagingBBox null>>setpagedevice": ""
+*de.PageSize 4X6.bl/4"x6" (randlos) [101.6x152.4mm 4.00"x6.00"]: "<</CNPageSizeName(4X6.bl)/PageSize[288 432]/ImagingBBox null>>setpagedevice": ""
+*de.PageSize 5X7/5"x7" [127.0x177.8mm 5.00"x7.00"]: "<</CNPageSizeName(5X7)/PageSize[360 504]/ImagingBBox null>>setpagedevice": ""
+*de.PageSize 5X7.bl/5"x7" (randlos) [127.0x177.8mm 5.00"x7.00"]: "<</CNPageSizeName(5X7.bl)/PageSize[360 504]/ImagingBBox null>>setpagedevice": ""
+*de.PageSize 8X10/8"x10" [203.2x254.0mm 8.00"x10.00"]: "<</CNPageSizeName(8X10)/PageSize[576 720]/ImagingBBox null>>setpagedevice": ""
+*de.PageSize 8X10.bl/8"x10" (randlos) [203.2x254.0mm 8.00"x10.00"]: "<</CNPageSizeName(8X10.bl)/PageSize[576 720]/ImagingBBox null>>setpagedevice": ""
+*de.PageSize 10X12/10"x12" [254.0x304.8mm 10.00"x12.02"]: "<</CNPageSizeName(10X12)/PageSize[720 864]/ImagingBBox null>>setpagedevice": ""
+*de.PageSize 10X12.bl/10"x12" (randlos) [254.0x304.8mm 10.00"x12.00"]: "<</CNPageSizeName(10X12.bl)/PageSize[720 864]/ImagingBBox null>>setpagedevice": ""
+*de.PageSize l/L [89.0x127.0mm 3.50"x5.00"]: "<</CNPageSizeName(l)/PageSize[252 360]/ImagingBBox null>>setpagedevice": ""
+*de.PageSize l.bl/L (randlos) [89.0x127.0mm 3.50"x5.00"]: "<</CNPageSizeName(l.bl)/PageSize[252 360]/ImagingBBox null>>setpagedevice": ""
+*de.PageSize 2l/2L [127.0x178.0mm 5.00"x7.01"]: "<</CNPageSizeName(2l)/PageSize[360 505]/ImagingBBox null>>setpagedevice": ""
+*de.PageSize 2l.bl/2L (randlos) [127.0x178.0mm 5.00"x7.01"]: "<</CNPageSizeName(2l.bl)/PageSize[360 505]/ImagingBBox null>>setpagedevice": ""
+*de.PageSize letterfineart35/Letter (Art-Papier Rand 35) [215.9x279.4mm 8.50"x11.00"]: "<</CNPageSizeName(letterfineart35)/PageSize[612 792]/ImagingBBox null>>setpagedevice": ""
+*de.PageSize a4fineart35/A4 (Art-Papier Rand 35) [210.0x297.0mm 8.27"x11.69"]: "<</CNPageSizeName(a4fineart35)/PageSize[595 842]/ImagingBBox null>>setpagedevice": ""
+*de.PageSize a3fineart35/A3 (Art Paper Margin 35) [11.69"x16.54" 297.0x420.0mm]: "<</CNPageSizeName(a3fineart35)/PageSize[842 1191]/ImagingBBox null>>setpagedevice": ""
+*de.PageSize a3plusfineart35/A3+ (Art Paper Margin 35) [12.95"x19.02" 329.0x483.0mm]: "<</CNPageSizeName(a3plusfineart35)/PageSize[933 1369]/ImagingBBox null>>setpagedevice": ""
+*de.PageSize postcard/Hagaki [100.0x148.0mm 3.94"x5.83"]: "<</CNPageSizeName(postcard)/PageSize[283 420]/ImagingBBox null>>setpagedevice": ""
+*de.PageSize postcard.bl/Hagaki (randlos) [100.0x148.0mm 3.94"x5.83"]: "<</CNPageSizeName(postcard.bl)/PageSize[283 420]/ImagingBBox null>>setpagedevice": ""
+*de.PageSize postdbl/Hagaki 2 [200.0x148.0mm 7.87"x5.83"]: "<</CNPageSizeName(postdbl)/PageSize[567 420]/ImagingBBox null>>setpagedevice": ""
+*de.PageSize envelop10p/Umschlag #10 [104.8x241.3mm 4.12"x9.50"]: "<</CNPageSizeName(envelop10p)/PageSize[297 684]/ImagingBBox null>>setpagedevice": ""
+*de.PageSize envelopdlp/Umschlag DL [110.0x220.0mm 4.33"x8.66"]: "<</CNPageSizeName(envelopdlp)/PageSize[312 624]/ImagingBBox null>>setpagedevice": ""
+*de.PageSize envj4p/Youkei 4 [105.0x235.0mm 4.13"x9.25"]: "<</CNPageSizeName(envj4p)/PageSize[298 666]/ImagingBBox null>>setpagedevice": ""
+*de.PageSize envj6p/Youkei 6 [98.0x190.0mm 3.86"x7.48"]: "<</CNPageSizeName(envj6p)/PageSize[278 539]/ImagingBBox null>>setpagedevice": ""
+*de.PageRegion Letter/Letter [215.9x279.4mm 8.50"x11.00"]: "<</CNPageSizeName(Letter)/PageSize[612 792]/ImagingBBox null>>setpagedevice": ""
+*de.PageRegion Letter.bl/Letter (randlos) [215.9x279.4mm 8.50"x11.00"]: "<</CNPageSizeName(Letter.bl)/PageSize[612 792]/ImagingBBox null>>setpagedevice": ""
+*de.PageRegion Legal/Legal [215.9x355.6mm 8.50"x14.00"]: "<</CNPageSizeName(Legal)/PageSize[612 1008]/ImagingBBox null>>setpagedevice": ""
+*de.PageRegion ledger/11"x17" [279.4x431.8mm 11.00"x17.00"]: "<</CNPageSizeName(ledger)/PageSize[792 1224]/ImagingBBox null>>setpagedevice": ""
+*de.PageRegion ledger.bl/11"x17" (randlos) [279.4x431.8mm 11.00"x17.00"]: "<</CNPageSizeName(ledger.bl)/PageSize[792 1224]/ImagingBBox null>>setpagedevice": ""
+*de.PageRegion A5/A5 [148.0x210.0mm 5.83"x8.27"]: "<</CNPageSizeName(A5)/PageSize[420 595]/ImagingBBox null>>setpagedevice": ""
+*de.PageRegion A4/A4 [210.0x297.0mm 8.27"x11.69"]: "<</CNPageSizeName(A4)/PageSize[595 842]/ImagingBBox null>>setpagedevice": ""
+*de.PageRegion A4.bl/A4 (randlos) [210.0x297.0mm 8.27"x11.69"]: "<</CNPageSizeName(A4.bl)/PageSize[595 842]/ImagingBBox null>>setpagedevice": ""
+*de.PageRegion a3/A3 [297.0x420.0mm 11.69"x16.54"]: "<</CNPageSizeName(a3)/PageSize[842 1191]/ImagingBBox null>>setpagedevice": ""
+*de.PageRegion a3.bl/A3 (randlos) [297.0x420.0mm 11.69"x16.54"]: "<</CNPageSizeName(a3.bl)/PageSize[842 1191]/ImagingBBox null>>setpagedevice": ""
+*de.PageRegion a3plus/A3+ [329.0x483.0mm 12.95"x19.02"]: "<</CNPageSizeName(a3plus)/PageSize[933 1369]/ImagingBBox null>>setpagedevice": ""
+*de.PageRegion a3plus.bl/A3+ (randlos) [329.0x483.0mm 12.95"x19.02"]: "<</CNPageSizeName(a3plus.bl)/PageSize[933 1369]/ImagingBBox null>>setpagedevice": ""
+*de.PageRegion B5/B5 [182.0x257.0mm 7.17"x10.12"]: "<</CNPageSizeName(B5)/PageSize[516 729]/ImagingBBox null>>setpagedevice": ""
+*de.PageRegion b4/B4 [257.0x364.0mm 10.12"x14.33"]: "<</CNPageSizeName(b4)/PageSize[729 1032]/ImagingBBox null>>setpagedevice": ""
+*de.PageRegion 4X6/4"x6" [101.6x152.4mm 4.00"x6.00"]: "<</CNPageSizeName(4X6)/PageSize[288 432]/ImagingBBox null>>setpagedevice": ""
+*de.PageRegion 4X6.bl/4"x6" (randlos) [101.6x152.4mm 4.00"x6.00"]: "<</CNPageSizeName(4X6.bl)/PageSize[288 432]/ImagingBBox null>>setpagedevice": ""
+*de.PageRegion 5X7/5"x7" [127.0x177.8mm 5.00"x7.00"]: "<</CNPageSizeName(5X7)/PageSize[360 504]/ImagingBBox null>>setpagedevice": ""
+*de.PageRegion 5X7.bl/5"x7" (randlos) [127.0x177.8mm 5.00"x7.00"]: "<</CNPageSizeName(5X7.bl)/PageSize[360 504]/ImagingBBox null>>setpagedevice": ""
+*de.PageRegion 8X10/8"x10" [203.2x254.0mm 8.00"x10.00"]: "<</CNPageSizeName(8X10)/PageSize[576 720]/ImagingBBox null>>setpagedevice": ""
+*de.PageRegion 8X10.bl/8"x10" (randlos) [203.2x254.0mm 8.00"x10.00"]: "<</CNPageSizeName(8X10.bl)/PageSize[576 720]/ImagingBBox null>>setpagedevice": ""
+*de.PageRegion 10X12/10"x12" [254.0x304.8mm 10.00"x12.02"]: "<</CNPageSizeName(10X12)/PageSize[720 864]/ImagingBBox null>>setpagedevice": ""
+*de.PageRegion 10X12.bl/10"x12" (randlos) [254.0x304.8mm 10.00"x12.00"]: "<</CNPageSizeName(10X12.bl)/PageSize[720 864]/ImagingBBox null>>setpagedevice": ""
+*de.PageRegion l/L [89.0x127.0mm 3.50"x5.00"]: "<</CNPageSizeName(l)/PageSize[252 360]/ImagingBBox null>>setpagedevice": ""
+*de.PageRegion l.bl/L (randlos) [89.0x127.0mm 3.50"x5.00"]: "<</CNPageSizeName(l.bl)/PageSize[252 360]/ImagingBBox null>>setpagedevice": ""
+*de.PageRegion 2l/2L [127.0x178.0mm 5.00"x7.01"]: "<</CNPageSizeName(2l)/PageSize[360 505]/ImagingBBox null>>setpagedevice": ""
+*de.PageRegion 2l.bl/2L (randlos) [127.0x178.0mm 5.00"x7.01"]: "<</CNPageSizeName(2l.bl)/PageSize[360 505]/ImagingBBox null>>setpagedevice": ""
+*de.PageRegion letterfineart35/Letter (Art-Papier Rand 35) [215.9x279.4mm 8.50"x11.00"]: "<</CNPageSizeName(letterfineart35)/PageSize[612 792]/ImagingBBox null>>setpagedevice": ""
+*de.PageRegion a4fineart35/A4 (Art-Papier Rand 35) [210.0x297.0mm 8.27"x11.69"]: "<</CNPageSizeName(a4fineart35)/PageSize[595 842]/ImagingBBox null>>setpagedevice": ""
+*de.PageRegion a3fineart35/A3 (Art Paper Margin 35) [11.69"x16.54" 297.0x420.0mm]: "<</CNPageSizeName(a3fineart35)/PageSize[842 1191]/ImagingBBox null>>setpagedevice": ""
+*de.PageRegion a3plusfineart35/A3+ (Art Paper Margin 35) [12.95"x19.02" 329.0x483.0mm]: "<</CNPageSizeName(a3plusfineart35)/PageSize[933 1369]/ImagingBBox null>>setpagedevice": ""
+*de.PageRegion postcard/Hagaki [100.0x148.0mm 3.94"x5.83"]: "<</CNPageSizeName(postcard)/PageSize[283 420]/ImagingBBox null>>setpagedevice": ""
+*de.PageRegion postcard.bl/Hagaki (randlos) [100.0x148.0mm 3.94"x5.83"]: "<</CNPageSizeName(postcard.bl)/PageSize[283 420]/ImagingBBox null>>setpagedevice": ""
+*de.PageRegion postdbl/Hagaki 2 [200.0x148.0mm 7.87"x5.83"]: "<</CNPageSizeName(postdbl)/PageSize[567 420]/ImagingBBox null>>setpagedevice": ""
+*de.PageRegion envelop10p/Umschlag #10 [104.8x241.3mm 4.12"x9.50"]: "<</CNPageSizeName(envelop10p)/PageSize[297 684]/ImagingBBox null>>setpagedevice": ""
+*de.PageRegion envelopdlp/Umschlag DL [110.0x220.0mm 4.33"x8.66"]: "<</CNPageSizeName(envelopdlp)/PageSize[312 624]/ImagingBBox null>>setpagedevice": ""
+*de.PageRegion envj4p/Youkei 4 [105.0x235.0mm 4.13"x9.25"]: "<</CNPageSizeName(envj4p)/PageSize[298 666]/ImagingBBox null>>setpagedevice": ""
+*de.PageRegion envj6p/Youkei 6 [98.0x190.0mm 3.86"x7.48"]: "<</CNPageSizeName(envj6p)/PageSize[278 539]/ImagingBBox null>>setpagedevice": ""
+*de.Translation CNBorderless/Randlos: ""
+*de.Translation CNExtension/Erweiterungsumfang: PickOne: ""
+*de.Translation CNColorAdjust/Manuelle Farbeinstellung: ""
+*de.Translation CNBalanceC/Cyan: PickOne: ""
+*de.Translation CNBalanceM/Magenta: PickOne: ""
+*de.Translation CNBalanceY/Gelb: PickOne: ""
+*de.Translation CNTone/Tonwert: PickOne: ""
+*de.Translation CNGamma/Helligkeit: PickOne: ""
+*de.CNGamma 1.4/Hell: "<</CNGamma(1.4)>>setpagedevice": ""
+*de.CNGamma 1.8/Normal: "<</CNGamma(1.8)>>setpagedevice": ""
+*de.CNGamma 2.2/Dunkel: "<</CNGamma(2.2)>>setpagedevice": ""
+*de.Translation CNDensity/Intensität: PickOne: ""
+*de.Translation CNContrast/Kontrast: PickOne: ""
+*de.Translation CNDetectPaperWidth/Papierbreite erkennen: Boolean: ""
+
+*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+*% Translation: French (fr)
+*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+*fr.Translation CNMain/Principal: ""
+*fr.Translation MediaType/Type de support: PickOne: ""
+*fr.MediaType plain/Papier ordinaire: "<</MediaType(plain)>>setpagedevice": ""
+*fr.MediaType glossygold/Papier Photo Glacé Extra II: "<</MediaType(glossygold)>>setpagedevice": ""
+*fr.MediaType proplatinum/Photo Professionnel Platine: "<</MediaType(proplatinum)>>setpagedevice": ""
+*fr.MediaType luster/Photo Professionnel Lustré: "<</MediaType(luster)>>setpagedevice": ""
+*fr.MediaType semigloss/Papier Photo Satiné: "<</MediaType(semigloss)>>setpagedevice": ""
+*fr.MediaType glossystandard/Papier Photo Brillant: "<</MediaType(glossystandard)>>setpagedevice": ""
+*fr.MediaType matte/Papier Photo Mat: "<</MediaType(matte)>>setpagedevice": ""
+*fr.MediaType otherfineart/Autre papier Fine Art: "<</MediaType(otherfineart)>>setpagedevice": ""
+*fr.MediaType envelope/Enveloppe: "<</MediaType(envelope)>>setpagedevice": ""
+*fr.MediaType postcardaddress/Hagaki A: "<</MediaType(postcardaddress)>>setpagedevice": ""
+*fr.MediaType ijpostcard/Ink Jet Hagaki: "<</MediaType(ijpostcard)>>setpagedevice": ""
+*fr.MediaType glossypost/Hagaki K: "<</MediaType(glossypost)>>setpagedevice": ""
+*fr.MediaType postcard/Hagaki: "<</MediaType(postcard)>>setpagedevice": ""
+*fr.MediaType highres/Papier haute résolution: "<</MediaType(highres)>>setpagedevice": ""
+*fr.MediaType tshirt/Transferts Tee-shirt: "<</MediaType(tshirt)>>setpagedevice": ""
+*fr.MediaType otherphoto/Autre papier photo: "<</MediaType(otherphoto)>>setpagedevice": ""
+*fr.Translation InputSlot/Alimentation papier: PickOne: ""
+*fr.InputSlot asf/Réceptacle arrière: "<</MediaPosition 0>>setpagedevice": ""
+*fr.Translation CNQuality/Qualité d'impression: PickOne: ""
+*fr.CNQuality 1/1(Haute): "<</CNQuality(1)>>setpagedevice": ""
+*fr.CNQuality 4/4(Brouillon): "<</CNQuality(4)>>setpagedevice": ""
+*fr.Translation CNGrayscale/Impression niveau de gris: Boolean: ""
+*fr.Translation CNPagesetup/Configuration de la page: ""
+*fr.Translation PageSize/Format page: PickOne: ""
+*fr.PageSize Letter/Lettre [215.9x279.4mm 8.50"x11.00"]: "<</CNPageSizeName(Letter)/PageSize[612 792]/ImagingBBox null>>setpagedevice": ""
+*fr.PageSize Letter.bl/Lettre (sans bordure) [215.9x279.4mm 8.50"x11.00"]: "<</CNPageSizeName(Letter.bl)/PageSize[612 792]/ImagingBBox null>>setpagedevice": ""
+*fr.PageSize Legal/Légal [215.9x355.6mm 8.50"x14.00"]: "<</CNPageSizeName(Legal)/PageSize[612 1008]/ImagingBBox null>>setpagedevice": ""
+*fr.PageSize ledger/11"x17" [279.4x431.8mm 11.00"x17.00"]: "<</CNPageSizeName(ledger)/PageSize[792 1224]/ImagingBBox null>>setpagedevice": ""
+*fr.PageSize ledger.bl/11"x17" (sans bordure) [279.4x431.8mm 11.00"x17.00"]: "<</CNPageSizeName(ledger.bl)/PageSize[792 1224]/ImagingBBox null>>setpagedevice": ""
+*fr.PageSize A5/A5 [148.0x210.0mm 5.83"x8.27"]: "<</CNPageSizeName(A5)/PageSize[420 595]/ImagingBBox null>>setpagedevice": ""
+*fr.PageSize A4/A4 [210.0x297.0mm 8.27"x11.69"]: "<</CNPageSizeName(A4)/PageSize[595 842]/ImagingBBox null>>setpagedevice": ""
+*fr.PageSize A4.bl/A4 (sans bordure) [210.0x297.0mm 8.27"x11.69"]: "<</CNPageSizeName(A4.bl)/PageSize[595 842]/ImagingBBox null>>setpagedevice": ""
+*fr.PageSize a3/A3 [297.0x420.0mm 11.69"x16.54"]: "<</CNPageSizeName(a3)/PageSize[842 1191]/ImagingBBox null>>setpagedevice": ""
+*fr.PageSize a3.bl/A3 (sans bordure) [297.0x420.0mm 11.69"x16.54"]: "<</CNPageSizeName(a3.bl)/PageSize[842 1191]/ImagingBBox null>>setpagedevice": ""
+*fr.PageSize a3plus/A3+ [329.0x483.0mm 12.95"x19.02"]: "<</CNPageSizeName(a3plus)/PageSize[933 1369]/ImagingBBox null>>setpagedevice": ""
+*fr.PageSize a3plus.bl/A3+ (sans bordure) [329.0x483.0mm 12.95"x19.02"]: "<</CNPageSizeName(a3plus.bl)/PageSize[933 1369]/ImagingBBox null>>setpagedevice": ""
+*fr.PageSize B5/B5 [182.0x257.0mm 7.17"x10.12"]: "<</CNPageSizeName(B5)/PageSize[516 729]/ImagingBBox null>>setpagedevice": ""
+*fr.PageSize b4/B4 [257.0x364.0mm 10.12"x14.33"]: "<</CNPageSizeName(b4)/PageSize[729 1032]/ImagingBBox null>>setpagedevice": ""
+*fr.PageSize 4X6/4"x6" [101.6x152.4mm 4.00"x6.00"]: "<</CNPageSizeName(4X6)/PageSize[288 432]/ImagingBBox null>>setpagedevice": ""
+*fr.PageSize 4X6.bl/4"x6" (sans bordure) [101.6x152.4mm 4.00"x6.00"]: "<</CNPageSizeName(4X6.bl)/PageSize[288 432]/ImagingBBox null>>setpagedevice": ""
+*fr.PageSize 5X7/5"x7" [127.0x177.8mm 5.00"x7.00"]: "<</CNPageSizeName(5X7)/PageSize[360 504]/ImagingBBox null>>setpagedevice": ""
+*fr.PageSize 5X7.bl/5"x7" (sans bordure) [127.0x177.8mm 5.00"x7.00"]: "<</CNPageSizeName(5X7.bl)/PageSize[360 504]/ImagingBBox null>>setpagedevice": ""
+*fr.PageSize 8X10/8"x10" [203.2x254.0mm 8.00"x10.00"]: "<</CNPageSizeName(8X10)/PageSize[576 720]/ImagingBBox null>>setpagedevice": ""
+*fr.PageSize 8X10.bl/8"x10" (sans bordure) [203.2x254.0mm 8.00"x10.00"]: "<</CNPageSizeName(8X10.bl)/PageSize[576 720]/ImagingBBox null>>setpagedevice": ""
+*fr.PageSize 10X12/10"x12" [254.0x304.8mm 10.00"x12.05"]: "<</CNPageSizeName(10X12)/PageSize[720 864]/ImagingBBox null>>setpagedevice": ""
+*fr.PageSize 10X12.bl/10"x12" (sans bordure) [254.0x304.8mm 10.00"x12.00"]: "<</CNPageSizeName(10X12.bl)/PageSize[720 864]/ImagingBBox null>>setpagedevice": ""
+*fr.PageSize l/L [89.0x127.0mm 3.50"x5.00"]: "<</CNPageSizeName(l)/PageSize[252 360]/ImagingBBox null>>setpagedevice": ""
+*fr.PageSize l.bl/L (sans bordure) [89.0x127.0mm 3.50"x5.00"]: "<</CNPageSizeName(l.bl)/PageSize[252 360]/ImagingBBox null>>setpagedevice": ""
+*fr.PageSize 2l/2L [127.0x178.0mm 5.00"x7.01"]: "<</CNPageSizeName(2l)/PageSize[360 505]/ImagingBBox null>>setpagedevice": ""
+*fr.PageSize 2l.bl/2L (sans bordure) [127.0x178.0mm 5.00"x7.01"]: "<</CNPageSizeName(2l.bl)/PageSize[360 505]/ImagingBBox null>>setpagedevice": ""
+*fr.PageSize letterfineart35/Lettre (papier Art marge 35) [215.9x279.4mm 8.50"x11.00"]: "<</CNPageSizeName(letterfineart35)/PageSize[612 792]/ImagingBBox null>>setpagedevice": ""
+*fr.PageSize a4fineart35/A4 (papier Art marge 35) [210.0x297.0mm 8.27"x11.69"]: "<</CNPageSizeName(a4fineart35)/PageSize[595 842]/ImagingBBox null>>setpagedevice": ""
+*fr.PageSize a3fineart35/A3 (Art Paper Margin 35) [11.69"x16.54" 297.0x420.0mm]: "<</CNPageSizeName(a3fineart35)/PageSize[842 1191]/ImagingBBox null>>setpagedevice": ""
+*fr.PageSize a3plusfineart35/A3+ (Art Paper Margin 35) [12.95"x19.02" 329.0x483.0mm]: "<</CNPageSizeName(a3plusfineart35)/PageSize[933 1369]/ImagingBBox null>>setpagedevice": ""
+*fr.PageSize postcard/Hagaki [100.0x148.0mm 3.94"x5.83"]: "<</CNPageSizeName(postcard)/PageSize[283 420]/ImagingBBox null>>setpagedevice": ""
+*fr.PageSize postcard.bl/Hagaki (sans bordure) [100.0x148.0mm 3.94"x5.83"]: "<</CNPageSizeName(postcard.bl)/PageSize[283 420]/ImagingBBox null>>setpagedevice": ""
+*fr.PageSize postdbl/Hagaki 2 [200.0x148.0mm 7.87"x5.83"]: "<</CNPageSizeName(postdbl)/PageSize[567 420]/ImagingBBox null>>setpagedevice": ""
+*fr.PageSize envelop10p/Env. comm. nº 10 [104.8x241.3mm 4.12"x9.50"]: "<</CNPageSizeName(envelop10p)/PageSize[297 684]/ImagingBBox null>>setpagedevice": ""
+*fr.PageSize envelopdlp/DL Env. [110.0x220.0mm 4.33"x8.66"]: "<</CNPageSizeName(envelopdlp)/PageSize[312 624]/ImagingBBox null>>setpagedevice": ""
+*fr.PageSize envj4p/Youkei 4 [105.0x235.0mm 4.13"x9.25"]: "<</CNPageSizeName(envj4p)/PageSize[298 666]/ImagingBBox null>>setpagedevice": ""
+*fr.PageSize envj6p/Youkei 6 [98.0x190.0mm 3.86"x7.48"]: "<</CNPageSizeName(envj6p)/PageSize[278 539]/ImagingBBox null>>setpagedevice": ""
+*fr.PageRegion Letter/Lettre [215.9x279.4mm 8.50"x11.00"]: "<</CNPageSizeName(Letter)/PageSize[612 792]/ImagingBBox null>>setpagedevice": ""
+*fr.PageRegion Letter.bl/Lettre (sans bordure) [215.9x279.4mm 8.50"x11.00"]: "<</CNPageSizeName(Letter.bl)/PageSize[612 792]/ImagingBBox null>>setpagedevice": ""
+*fr.PageRegion Legal/Légal [215.9x355.6mm 8.50"x14.00"]: "<</CNPageSizeName(Legal)/PageSize[612 1008]/ImagingBBox null>>setpagedevice": ""
+*fr.PageRegion ledger/11"x17" [279.4x431.8mm 11.00"x17.00"]: "<</CNPageSizeName(ledger)/PageSize[792 1224]/ImagingBBox null>>setpagedevice": ""
+*fr.PageRegion ledger.bl/11"x17" (sans bordure) [279.4x431.8mm 11.00"x17.00"]: "<</CNPageSizeName(ledger.bl)/PageSize[792 1224]/ImagingBBox null>>setpagedevice": ""
+*fr.PageRegion A5/A5 [148.0x210.0mm 5.83"x8.27"]: "<</CNPageSizeName(A5)/PageSize[420 595]/ImagingBBox null>>setpagedevice": ""
+*fr.PageRegion A4/A4 [210.0x297.0mm 8.27"x11.69"]: "<</CNPageSizeName(A4)/PageSize[595 842]/ImagingBBox null>>setpagedevice": ""
+*fr.PageRegion A4.bl/A4 (sans bordure) [210.0x297.0mm 8.27"x11.69"]: "<</CNPageSizeName(A4.bl)/PageSize[595 842]/ImagingBBox null>>setpagedevice": ""
+*fr.PageRegion a3/A3 [297.0x420.0mm 11.69"x16.54"]: "<</CNPageSizeName(a3)/PageSize[842 1191]/ImagingBBox null>>setpagedevice": ""
+*fr.PageRegion a3.bl/A3 (sans bordure) [297.0x420.0mm 11.69"x16.54"]: "<</CNPageSizeName(a3.bl)/PageSize[842 1191]/ImagingBBox null>>setpagedevice": ""
+*fr.PageRegion a3plus/A3+ [329.0x483.0mm 12.95"x19.02"]: "<</CNPageSizeName(a3plus)/PageSize[933 1369]/ImagingBBox null>>setpagedevice": ""
+*fr.PageRegion a3plus.bl/A3+ (sans bordure) [329.0x483.0mm 12.95"x19.02"]: "<</CNPageSizeName(a3plus.bl)/PageSize[933 1369]/ImagingBBox null>>setpagedevice": ""
+*fr.PageRegion B5/B5 [182.0x257.0mm 7.17"x10.12"]: "<</CNPageSizeName(B5)/PageSize[516 729]/ImagingBBox null>>setpagedevice": ""
+*fr.PageRegion b4/B4 [257.0x364.0mm 10.12"x14.33"]: "<</CNPageSizeName(b4)/PageSize[729 1032]/ImagingBBox null>>setpagedevice": ""
+*fr.PageRegion 4X6/4"x6" [101.6x152.4mm 4.00"x6.00"]: "<</CNPageSizeName(4X6)/PageSize[288 432]/ImagingBBox null>>setpagedevice": ""
+*fr.PageRegion 4X6.bl/4"x6" (sans bordure) [101.6x152.4mm 4.00"x6.00"]: "<</CNPageSizeName(4X6.bl)/PageSize[288 432]/ImagingBBox null>>setpagedevice": ""
+*fr.PageRegion 5X7/5"x7" [127.0x177.8mm 5.00"x7.00"]: "<</CNPageSizeName(5X7)/PageSize[360 504]/ImagingBBox null>>setpagedevice": ""
+*fr.PageRegion 5X7.bl/5"x7" (sans bordure) [127.0x177.8mm 5.00"x7.00"]: "<</CNPageSizeName(5X7.bl)/PageSize[360 504]/ImagingBBox null>>setpagedevice": ""
+*fr.PageRegion 8X10/8"x10" [203.2x254.0mm 8.00"x10.00"]: "<</CNPageSizeName(8X10)/PageSize[576 720]/ImagingBBox null>>setpagedevice": ""
+*fr.PageRegion 8X10.bl/8"x10" (sans bordure) [203.2x254.0mm 8.00"x10.00"]: "<</CNPageSizeName(8X10.bl)/PageSize[576 720]/ImagingBBox null>>setpagedevice": ""
+*fr.PageRegion 10X12/10"x12" [254.0x304.8mm 10.00"x12.05"]: "<</CNPageSizeName(10X12)/PageSize[720 864]/ImagingBBox null>>setpagedevice": ""
+*fr.PageRegion 10X12.bl/10"x12" (sans bordure) [254.0x304.8mm 10.00"x12.00"]: "<</CNPageSizeName(10X12.bl)/PageSize[720 864]/ImagingBBox null>>setpagedevice": ""
+*fr.PageRegion l/L [89.0x127.0mm 3.50"x5.00"]: "<</CNPageSizeName(l)/PageSize[252 360]/ImagingBBox null>>setpagedevice": ""
+*fr.PageRegion l.bl/L (sans bordure) [89.0x127.0mm 3.50"x5.00"]: "<</CNPageSizeName(l.bl)/PageSize[252 360]/ImagingBBox null>>setpagedevice": ""
+*fr.PageRegion 2l/2L [127.0x178.0mm 5.00"x7.01"]: "<</CNPageSizeName(2l)/PageSize[360 505]/ImagingBBox null>>setpagedevice": ""
+*fr.PageRegion 2l.bl/2L (sans bordure) [127.0x178.0mm 5.00"x7.01"]: "<</CNPageSizeName(2l.bl)/PageSize[360 505]/ImagingBBox null>>setpagedevice": ""
+*fr.PageRegion letterfineart35/Lettre (papier Art marge 35) [215.9x279.4mm 8.50"x11.00"]: "<</CNPageSizeName(letterfineart35)/PageSize[612 792]/ImagingBBox null>>setpagedevice": ""
+*fr.PageRegion a4fineart35/A4 (papier Art marge 35) [210.0x297.0mm 8.27"x11.69"]: "<</CNPageSizeName(a4fineart35)/PageSize[595 842]/ImagingBBox null>>setpagedevice": ""
+*fr.PageRegion a3fineart35/A3 (Art Paper Margin 35) [11.69"x16.54" 297.0x420.0mm]: "<</CNPageSizeName(a3fineart35)/PageSize[842 1191]/ImagingBBox null>>setpagedevice": ""
+*fr.PageRegion a3plusfineart35/A3+ (Art Paper Margin 35) [12.95"x19.02" 329.0x483.0mm]: "<</CNPageSizeName(a3plusfineart35)/PageSize[933 1369]/ImagingBBox null>>setpagedevice": ""
+*fr.PageRegion postcard/Hagaki [100.0x148.0mm 3.94"x5.83"]: "<</CNPageSizeName(postcard)/PageSize[283 420]/ImagingBBox null>>setpagedevice": ""
+*fr.PageRegion postcard.bl/Hagaki (sans bordure) [100.0x148.0mm 3.94"x5.83"]: "<</CNPageSizeName(postcard.bl)/PageSize[283 420]/ImagingBBox null>>setpagedevice": ""
+*fr.PageRegion postdbl/Hagaki 2 [200.0x148.0mm 7.87"x5.83"]: "<</CNPageSizeName(postdbl)/PageSize[567 420]/ImagingBBox null>>setpagedevice": ""
+*fr.PageRegion envelop10p/Env. comm. nº 10 [104.8x241.3mm 4.12"x9.50"]: "<</CNPageSizeName(envelop10p)/PageSize[297 684]/ImagingBBox null>>setpagedevice": ""
+*fr.PageRegion envelopdlp/DL Env. [110.0x220.0mm 4.33"x8.66"]: "<</CNPageSizeName(envelopdlp)/PageSize[312 624]/ImagingBBox null>>setpagedevice": ""
+*fr.PageRegion envj4p/Youkei 4 [105.0x235.0mm 4.13"x9.25"]: "<</CNPageSizeName(envj4p)/PageSize[298 666]/ImagingBBox null>>setpagedevice": ""
+*fr.PageRegion envj6p/Youkei 6 [98.0x190.0mm 3.86"x7.48"]: "<</CNPageSizeName(envj6p)/PageSize[278 539]/ImagingBBox null>>setpagedevice": ""
+*fr.Translation CNBorderless/Sans bordure: ""
+*fr.Translation CNExtension/Grandeur de dépassement: PickOne: ""
+*fr.Translation CNColorAdjust/Réglage des couleurs manuel: ""
+*fr.Translation CNBalanceC/Cyan: PickOne: ""
+*fr.Translation CNBalanceM/Magenta: PickOne: ""
+*fr.Translation CNBalanceY/Jaune: PickOne: ""
+*fr.Translation CNTone/Ton: PickOne: ""
+*fr.Translation CNGamma/Luminosité: PickOne: ""
+*fr.CNGamma 1.4/Clair: "<</CNGamma(1.4)>>setpagedevice": ""
+*fr.CNGamma 1.8/Normal: "<</CNGamma(1.8)>>setpagedevice": ""
+*fr.CNGamma 2.2/Foncé: "<</CNGamma(2.2)>>setpagedevice": ""
+*fr.Translation CNDensity/Intensité: PickOne: ""
+*fr.Translation CNContrast/Contraste: PickOne: ""
+*fr.Translation CNDetectPaperWidth/Détecter la largeur du papier: Boolean: ""
+
+*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+*% Translation: Chinese(Simplified) (zh)
+*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+*zh.Translation CNMain/主要: ""
+*zh.Translation MediaType/介质类型: PickOne: ""
+*zh.MediaType plain/普通纸: "<</MediaType(plain)>>setpagedevice": ""
+*zh.MediaType glossygold/高级光面照片纸 II: "<</MediaType(glossygold)>>setpagedevice": ""
+*zh.MediaType proplatinum/优质专业照片纸: "<</MediaType(proplatinum)>>setpagedevice": ""
+*zh.MediaType luster/专业绒面照片纸: "<</MediaType(luster)>>setpagedevice": ""
+*zh.MediaType semigloss/亚高光泽照片纸: "<</MediaType(semigloss)>>setpagedevice": ""
+*zh.MediaType glossystandard/光面照相纸: "<</MediaType(glossystandard)>>setpagedevice": ""
+*zh.MediaType matte/无光泽照片纸: "<</MediaType(matte)>>setpagedevice": ""
+*zh.MediaType otherfineart/其他 Fine Art 纸张: "<</MediaType(otherfineart)>>setpagedevice": ""
+*zh.MediaType envelope/信封: "<</MediaType(envelope)>>setpagedevice": ""
+*zh.MediaType postcardaddress/Hagaki A: "<</MediaType(postcardaddress)>>setpagedevice": ""
+*zh.MediaType ijpostcard/Ink Jet Hagaki: "<</MediaType(ijpostcard)>>setpagedevice": ""
+*zh.MediaType glossypost/Hagaki K: "<</MediaType(glossypost)>>setpagedevice": ""
+*zh.MediaType postcard/Hagaki: "<</MediaType(postcard)>>setpagedevice": ""
+*zh.MediaType highres/高分辨率纸: "<</MediaType(highres)>>setpagedevice": ""
+*zh.MediaType tshirt/T 恤转印介质: "<</MediaType(tshirt)>>setpagedevice": ""
+*zh.MediaType otherphoto/其他照片纸: "<</MediaType(otherphoto)>>setpagedevice": ""
+*zh.Translation InputSlot/纸张来源: PickOne: ""
+*zh.InputSlot asf/后端托盘: "<</MediaPosition 0>>setpagedevice": ""
+*zh.Translation CNQuality/打印质量: PickOne: ""
+*zh.CNQuality 1/1(高): "<</CNQuality(1)>>setpagedevice": ""
+*zh.CNQuality 4/4(草稿): "<</CNQuality(4)>>setpagedevice": ""
+*zh.Translation CNGrayscale/灰度打印: Boolean: ""
+*zh.Translation CNPagesetup/页设置: ""
+*zh.Translation PageSize/页尺寸: PickOne: ""
+*zh.PageSize Letter/Letter [8.50"x11.00" 215.9x279.4mm]: "<</CNPageSizeName(Letter)/PageSize[612 792]/ImagingBBox null>>setpagedevice": ""
+*zh.PageSize Letter.bl/Letter(无边距) [8.50"x11.00" 215.9x279.4mm]: "<</CNPageSizeName(Letter.bl)/PageSize[612 792]/ImagingBBox null>>setpagedevice": ""
+*zh.PageSize Legal/Legal [8.50"x14.00" 215.9x355.6mm]: "<</CNPageSizeName(Legal)/PageSize[612 1008]/ImagingBBox null>>setpagedevice": ""
+*zh.PageSize ledger/11"x17" [11.00"x17.00" 279.4x431.8mm]: "<</CNPageSizeName(ledger)/PageSize[792 1224]/ImagingBBox null>>setpagedevice": ""
+*zh.PageSize ledger.bl/11"x17"(无边距) [11.00"x17.00" 279.4x431.8mm]: "<</CNPageSizeName(ledger.bl)/PageSize[792 1224]/ImagingBBox null>>setpagedevice": ""
+*zh.PageSize A5/A5 [5.83"x8.27" 148.0x210.0mm]: "<</CNPageSizeName(A5)/PageSize[420 595]/ImagingBBox null>>setpagedevice": ""
+*zh.PageSize A4/A4 [8.27"x11.69" 210.0x297.0mm]: "<</CNPageSizeName(A4)/PageSize[595 842]/ImagingBBox null>>setpagedevice": ""
+*zh.PageSize A4.bl/A4(无边距) [8.27"x11.69" 210.0x297.0mm]: "<</CNPageSizeName(A4.bl)/PageSize[595 842]/ImagingBBox null>>setpagedevice": ""
+*zh.PageSize a3/A3 [11.69"x16.54" 297.0x420.0mm]: "<</CNPageSizeName(a3)/PageSize[842 1191]/ImagingBBox null>>setpagedevice": ""
+*zh.PageSize a3.bl/A3(无边距) [11.69"x16.54" 297.0x420.0mm]: "<</CNPageSizeName(a3.bl)/PageSize[842 1191]/ImagingBBox null>>setpagedevice": ""
+*zh.PageSize a3plus/A3+ [12.95"x19.02" 329.0x483.0mm]: "<</CNPageSizeName(a3plus)/PageSize[933 1369]/ImagingBBox null>>setpagedevice": ""
+*zh.PageSize a3plus.bl/A3+(无边距) [12.95"x19.02" 329.0x483.0mm]: "<</CNPageSizeName(a3plus.bl)/PageSize[933 1369]/ImagingBBox null>>setpagedevice": ""
+*zh.PageSize B5/B5 [7.17"x10.12" 182.0x257.0mm]: "<</CNPageSizeName(B5)/PageSize[516 729]/ImagingBBox null>>setpagedevice": ""
+*zh.PageSize b4/B4 [10.12"x14.33" 257.0x364.0mm]: "<</CNPageSizeName(b4)/PageSize[729 1032]/ImagingBBox null>>setpagedevice": ""
+*zh.PageSize 4X6/4"x6" [4.00"x6.00" 101.6x152.4mm]: "<</CNPageSizeName(4X6)/PageSize[288 432]/ImagingBBox null>>setpagedevice": ""
+*zh.PageSize 4X6.bl/4"x6"(无边距) [4.00"x6.00" 101.6x152.4mm]: "<</CNPageSizeName(4X6.bl)/PageSize[288 432]/ImagingBBox null>>setpagedevice": ""
+*zh.PageSize 5X7/5"x7" [5.00"x7.00" 127.0x177.8mm]: "<</CNPageSizeName(5X7)/PageSize[360 504]/ImagingBBox null>>setpagedevice": ""
+*zh.PageSize 5X7.bl/5"x7"(无边距) [5.00"x7.00" 127.0x177.8mm]: "<</CNPageSizeName(5X7.bl)/PageSize[360 504]/ImagingBBox null>>setpagedevice": ""
+*zh.PageSize 8X10/8"x10" [8.00"x10.00" 203.2x254.0mm]: "<</CNPageSizeName(8X10)/PageSize[576 720]/ImagingBBox null>>setpagedevice": ""
+*zh.PageSize 8X10.bl/8"x10"(无边距) [8.00"x10.00" 203.2x254.0mm]: "<</CNPageSizeName(8X10.bl)/PageSize[576 720]/ImagingBBox null>>setpagedevice": ""
+*zh.PageSize 10X12/10"x12" [10.00"x12.00" 254.0x304.8mm]: "<</CNPageSizeName(10X12)/PageSize[720 864]/ImagingBBox null>>setpagedevice": ""
+*zh.PageSize 10X12.bl/10"x12"(无边距) [10.00"x12.00" 254.0x304.8mm]: "<</CNPageSizeName(10X12.bl)/PageSize[720 864]/ImagingBBox null>>setpagedevice": ""
+*zh.PageSize l/L [3.50"x5.00" 89.0x127.0mm]: "<</CNPageSizeName(l)/PageSize[252 360]/ImagingBBox null>>setpagedevice": ""
+*zh.PageSize l.bl/L(无边距) [3.50"x5.00" 89.0x127.0mm]: "<</CNPageSizeName(l.bl)/PageSize[252 360]/ImagingBBox null>>setpagedevice": ""
+*zh.PageSize 2l/2L [5.00"x7.01" 127.0x178.0mm]: "<</CNPageSizeName(2l)/PageSize[360 505]/ImagingBBox null>>setpagedevice": ""
+*zh.PageSize 2l.bl/2L(无边距) [5.00"x7.01" 127.0x178.0mm]: "<</CNPageSizeName(2l.bl)/PageSize[360 505]/ImagingBBox null>>setpagedevice": ""
+*zh.PageSize letterfineart35/Letter (Art 纸张 Margin 35) [8.50"x11.00" 215.9x279.4mm]: "<</CNPageSizeName(letterfineart35)/PageSize[612 792]/ImagingBBox null>>setpagedevice": ""
+*zh.PageSize a4fineart35/A4 (Art 纸张 Margin 35) [8.27"x11.69" 210.0x297.0mm]: "<</CNPageSizeName(a4fineart35)/PageSize[595 842]/ImagingBBox null>>setpagedevice": ""
+*zh.PageSize a3fineart35/A3 (Art Paper Margin 35) [11.69"x16.54" 297.0x420.0mm]: "<</CNPageSizeName(a3fineart35)/PageSize[842 1191]/ImagingBBox null>>setpagedevice": ""
+*zh.PageSize a3plusfineart35/A3+ (Art Paper Margin 35) [12.95"x19.02" 329.0x483.0mm]: "<</CNPageSizeName(a3plusfineart35)/PageSize[933 1369]/ImagingBBox null>>setpagedevice": ""
+*zh.PageSize postcard/Hagaki [3.94"x5.83" 100.0x148.0mm]: "<</CNPageSizeName(postcard)/PageSize[283 420]/ImagingBBox null>>setpagedevice": ""
+*zh.PageSize postcard.bl/Hagaki(无边距) [3.94"x5.83" 100.0x148.0mm]: "<</CNPageSizeName(postcard.bl)/PageSize[283 420]/ImagingBBox null>>setpagedevice": ""
+*zh.PageSize postdbl/Hagaki 2 [7.87"x5.83" 200.0x148.0mm]: "<</CNPageSizeName(postdbl)/PageSize[567 420]/ImagingBBox null>>setpagedevice": ""
+*zh.PageSize envelop10p/Comm. 信封 #10 [4.12"x9.50" 104.8x241.3mm]: "<</CNPageSizeName(envelop10p)/PageSize[297 684]/ImagingBBox null>>setpagedevice": ""
+*zh.PageSize envelopdlp/DL 信封 [4.33"x8.66" 110.0x220.0mm]: "<</CNPageSizeName(envelopdlp)/PageSize[312 624]/ImagingBBox null>>setpagedevice": ""
+*zh.PageSize envj4p/Youkei 4 [4.13"x9.25" 105.0x235.0mm]: "<</CNPageSizeName(envj4p)/PageSize[298 666]/ImagingBBox null>>setpagedevice": ""
+*zh.PageSize envj6p/Youkei 6 [3.86"x7.48" 98.0x190.0mm]: "<</CNPageSizeName(envj6p)/PageSize[278 539]/ImagingBBox null>>setpagedevice": ""
+*zh.PageRegion Letter/Letter [8.50"x11.00" 215.9x279.4mm]: "<</CNPageSizeName(Letter)/PageSize[612 792]/ImagingBBox null>>setpagedevice": ""
+*zh.PageRegion Letter.bl/Letter(无边距) [8.50"x11.00" 215.9x279.4mm]: "<</CNPageSizeName(Letter.bl)/PageSize[612 792]/ImagingBBox null>>setpagedevice": ""
+*zh.PageRegion Legal/Legal [8.50"x14.00" 215.9x355.6mm]: "<</CNPageSizeName(Legal)/PageSize[612 1008]/ImagingBBox null>>setpagedevice": ""
+*zh.PageRegion ledger/11"x17" [11.00"x17.00" 279.4x431.8mm]: "<</CNPageSizeName(ledger)/PageSize[792 1224]/ImagingBBox null>>setpagedevice": ""
+*zh.PageRegion ledger.bl/11"x17"(无边距) [11.00"x17.00" 279.4x431.8mm]: "<</CNPageSizeName(ledger.bl)/PageSize[792 1224]/ImagingBBox null>>setpagedevice": ""
+*zh.PageRegion A5/A5 [5.83"x8.27" 148.0x210.0mm]: "<</CNPageSizeName(A5)/PageSize[420 595]/ImagingBBox null>>setpagedevice": ""
+*zh.PageRegion A4/A4 [8.27"x11.69" 210.0x297.0mm]: "<</CNPageSizeName(A4)/PageSize[595 842]/ImagingBBox null>>setpagedevice": ""
+*zh.PageRegion A4.bl/A4(无边距) [8.27"x11.69" 210.0x297.0mm]: "<</CNPageSizeName(A4.bl)/PageSize[595 842]/ImagingBBox null>>setpagedevice": ""
+*zh.PageRegion a3/A3 [11.69"x16.54" 297.0x420.0mm]: "<</CNPageSizeName(a3)/PageSize[842 1191]/ImagingBBox null>>setpagedevice": ""
+*zh.PageRegion a3.bl/A3(无边距) [11.69"x16.54" 297.0x420.0mm]: "<</CNPageSizeName(a3.bl)/PageSize[842 1191]/ImagingBBox null>>setpagedevice": ""
+*zh.PageRegion a3plus/A3+ [12.95"x19.02" 329.0x483.0mm]: "<</CNPageSizeName(a3plus)/PageSize[933 1369]/ImagingBBox null>>setpagedevice": ""
+*zh.PageRegion a3plus.bl/A3+(无边距) [12.95"x19.02" 329.0x483.0mm]: "<</CNPageSizeName(a3plus.bl)/PageSize[933 1369]/ImagingBBox null>>setpagedevice": ""
+*zh.PageRegion B5/B5 [7.17"x10.12" 182.0x257.0mm]: "<</CNPageSizeName(B5)/PageSize[516 729]/ImagingBBox null>>setpagedevice": ""
+*zh.PageRegion b4/B4 [10.12"x14.33" 257.0x364.0mm]: "<</CNPageSizeName(b4)/PageSize[729 1032]/ImagingBBox null>>setpagedevice": ""
+*zh.PageRegion 4X6/4"x6" [4.00"x6.00" 101.6x152.4mm]: "<</CNPageSizeName(4X6)/PageSize[288 432]/ImagingBBox null>>setpagedevice": ""
+*zh.PageRegion 4X6.bl/4"x6"(无边距) [4.00"x6.00" 101.6x152.4mm]: "<</CNPageSizeName(4X6.bl)/PageSize[288 432]/ImagingBBox null>>setpagedevice": ""
+*zh.PageRegion 5X7/5"x7" [5.00"x7.00" 127.0x177.8mm]: "<</CNPageSizeName(5X7)/PageSize[360 504]/ImagingBBox null>>setpagedevice": ""
+*zh.PageRegion 5X7.bl/5"x7"(无边距) [5.00"x7.00" 127.0x177.8mm]: "<</CNPageSizeName(5X7.bl)/PageSize[360 504]/ImagingBBox null>>setpagedevice": ""
+*zh.PageRegion 8X10/8"x10" [8.00"x10.00" 203.2x254.0mm]: "<</CNPageSizeName(8X10)/PageSize[576 720]/ImagingBBox null>>setpagedevice": ""
+*zh.PageRegion 8X10.bl/8"x10"(无边距) [8.00"x10.00" 203.2x254.0mm]: "<</CNPageSizeName(8X10.bl)/PageSize[576 720]/ImagingBBox null>>setpagedevice": ""
+*zh.PageRegion 10X12/10"x12" [10.00"x12.00" 254.0x304.8mm]: "<</CNPageSizeName(10X12)/PageSize[720 864]/ImagingBBox null>>setpagedevice": ""
+*zh.PageRegion 10X12.bl/10"x12"(无边距) [10.00"x12.00" 254.0x304.8mm]: "<</CNPageSizeName(10X12.bl)/PageSize[720 864]/ImagingBBox null>>setpagedevice": ""
+*zh.PageRegion l/L [3.50"x5.00" 89.0x127.0mm]: "<</CNPageSizeName(l)/PageSize[252 360]/ImagingBBox null>>setpagedevice": ""
+*zh.PageRegion l.bl/L(无边距) [3.50"x5.00" 89.0x127.0mm]: "<</CNPageSizeName(l.bl)/PageSize[252 360]/ImagingBBox null>>setpagedevice": ""
+*zh.PageRegion 2l/2L [5.00"x7.01" 127.0x178.0mm]: "<</CNPageSizeName(2l)/PageSize[360 505]/ImagingBBox null>>setpagedevice": ""
+*zh.PageRegion 2l.bl/2L(无边距) [5.00"x7.01" 127.0x178.0mm]: "<</CNPageSizeName(2l.bl)/PageSize[360 505]/ImagingBBox null>>setpagedevice": ""
+*zh.PageRegion letterfineart35/Letter (Art 纸张 Margin 35) [8.50"x11.00" 215.9x279.4mm]: "<</CNPageSizeName(letterfineart35)/PageSize[612 792]/ImagingBBox null>>setpagedevice": ""
+*zh.PageRegion a4fineart35/A4 (Art 纸张 Margin 35) [8.27"x11.69" 210.0x297.0mm]: "<</CNPageSizeName(a4fineart35)/PageSize[595 842]/ImagingBBox null>>setpagedevice": ""
+*zh.PageRegion a3fineart35/A3 (Art Paper Margin 35) [11.69"x16.54" 297.0x420.0mm]: "<</CNPageSizeName(a3fineart35)/PageSize[842 1191]/ImagingBBox null>>setpagedevice": ""
+*zh.PageRegion a3plusfineart35/A3+ (Art Paper Margin 35) [12.95"x19.02" 329.0x483.0mm]: "<</CNPageSizeName(a3plusfineart35)/PageSize[933 1369]/ImagingBBox null>>setpagedevice": ""
+*zh.PageRegion postcard/Hagaki [3.94"x5.83" 100.0x148.0mm]: "<</CNPageSizeName(postcard)/PageSize[283 420]/ImagingBBox null>>setpagedevice": ""
+*zh.PageRegion postcard.bl/Hagaki(无边距) [3.94"x5.83" 100.0x148.0mm]: "<</CNPageSizeName(postcard.bl)/PageSize[283 420]/ImagingBBox null>>setpagedevice": ""
+*zh.PageRegion postdbl/Hagaki 2 [7.87"x5.83" 200.0x148.0mm]: "<</CNPageSizeName(postdbl)/PageSize[567 420]/ImagingBBox null>>setpagedevice": ""
+*zh.PageRegion envelop10p/Comm. 信封 #10 [4.12"x9.50" 104.8x241.3mm]: "<</CNPageSizeName(envelop10p)/PageSize[297 684]/ImagingBBox null>>setpagedevice": ""
+*zh.PageRegion envelopdlp/DL 信封 [4.33"x8.66" 110.0x220.0mm]: "<</CNPageSizeName(envelopdlp)/PageSize[312 624]/ImagingBBox null>>setpagedevice": ""
+*zh.PageRegion envj4p/Youkei 4 [4.13"x9.25" 105.0x235.0mm]: "<</CNPageSizeName(envj4p)/PageSize[298 666]/ImagingBBox null>>setpagedevice": ""
+*zh.PageRegion envj6p/Youkei 6 [3.86"x7.48" 98.0x190.0mm]: "<</CNPageSizeName(envj6p)/PageSize[278 539]/ImagingBBox null>>setpagedevice": ""
+*zh.Translation CNBorderless/无边距: ""
+*zh.Translation CNExtension/扩展量: PickOne: ""
+*zh.Translation CNColorAdjust/手动色彩调节: ""
+*zh.Translation CNBalanceC/青色: PickOne: ""
+*zh.Translation CNBalanceM/品红色: PickOne: ""
+*zh.Translation CNBalanceY/黄色: PickOne: ""
+*zh.Translation CNTone/色调: PickOne: ""
+*zh.Translation CNGamma/亮度: PickOne: ""
+*zh.CNGamma 1.4/亮: "<</CNGamma(1.4)>>setpagedevice": ""
+*zh.CNGamma 1.8/普通: "<</CNGamma(1.8)>>setpagedevice": ""
+*zh.CNGamma 2.2/暗: "<</CNGamma(2.2)>>setpagedevice": ""
+*zh.Translation CNDensity/浓度: PickOne: ""
+*zh.Translation CNContrast/对比度: PickOne: ""
+*zh.Translation CNDetectPaperWidth/检测纸张宽度: Boolean: ""
+
+*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+*% Translation: Japanese (ja)
+*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+*ja.Translation CNMain/基本設定: ""
+*ja.Translation MediaType/用紙の種類: PickOne: ""
+*ja.MediaType plain/普通紙: "<</MediaType(plain)>>setpagedevice": ""
+*ja.MediaType glossygold/写真用紙 光沢ゴールド: "<</MediaType(glossygold)>>setpagedevice": ""
+*ja.MediaType proplatinum/光沢プロ プラチナグレード: "<</MediaType(proplatinum)>>setpagedevice": ""
+*ja.MediaType luster/写真用紙 微粒面光沢 ラスター: "<</MediaType(luster)>>setpagedevice": ""
+*ja.MediaType semigloss/写真用紙 絹目調: "<</MediaType(semigloss)>>setpagedevice": ""
+*ja.MediaType glossystandard/写真用紙 光沢 スタンダード: "<</MediaType(glossystandard)>>setpagedevice": ""
+*ja.MediaType matte/マットフォトペーパー: "<</MediaType(matte)>>setpagedevice": ""
+*ja.MediaType otherfineart/他社ファインアート紙: "<</MediaType(otherfineart)>>setpagedevice": ""
+*ja.MediaType envelope/封筒: "<</MediaType(envelope)>>setpagedevice": ""
+*ja.MediaType postcardaddress/すべてのはがき(あて名面): "<</MediaType(postcardaddress)>>setpagedevice": ""
+*ja.MediaType ijpostcard/インクジェットはがき(通信面): "<</MediaType(ijpostcard)>>setpagedevice": ""
+*ja.MediaType glossypost/インクジェット写真用はがき(通信面): "<</MediaType(glossypost)>>setpagedevice": ""
+*ja.MediaType postcard/はがき: "<</MediaType(postcard)>>setpagedevice": ""
+*ja.MediaType highres/高品位専用紙: "<</MediaType(highres)>>setpagedevice": ""
+*ja.MediaType tshirt/Tシャツ転写紙: "<</MediaType(tshirt)>>setpagedevice": ""
+*ja.MediaType otherphoto/膨潤紙: "<</MediaType(otherphoto)>>setpagedevice": ""
+*ja.Translation InputSlot/給紙方法: PickOne: ""
+*ja.InputSlot asf/後トレイ: "<</MediaPosition 0>>setpagedevice": ""
+*ja.Translation CNQuality/印刷品質: PickOne: ""
+*ja.CNQuality 1/1(きれい): "<</CNQuality(1)>>setpagedevice": ""
+*ja.CNQuality 4/4(下書き): "<</CNQuality(4)>>setpagedevice": ""
+*ja.Translation CNGrayscale/モノクロ印刷: Boolean: ""
+*ja.Translation CNPagesetup/ページ設定: ""
+*ja.Translation PageSize/用紙サイズ: PickOne: ""
+*ja.PageSize Letter/レター [215.9x279.4mm 8.50"x11.00"]: "<</CNPageSizeName(Letter)/PageSize[612 792]/ImagingBBox null>>setpagedevice": ""
+*ja.PageSize Letter.bl/レター (フチなし) [215.9x279.4mm 8.50"x11.00"]: "<</CNPageSizeName(Letter.bl)/PageSize[612 792]/ImagingBBox null>>setpagedevice": ""
+*ja.PageSize Legal/リーガル [215.9x355.6mm 8.50"x14.00"]: "<</CNPageSizeName(Legal)/PageSize[612 1008]/ImagingBBox null>>setpagedevice": ""
+*ja.PageSize ledger/11x17 [279.4x431.8mm 11.00"x17.00"]: "<</CNPageSizeName(ledger)/PageSize[792 1224]/ImagingBBox null>>setpagedevice": ""
+*ja.PageSize ledger.bl/11x17 (フチなし) [279.4x431.8mm 11.00"x17.00"]: "<</CNPageSizeName(ledger.bl)/PageSize[792 1224]/ImagingBBox null>>setpagedevice": ""
+*ja.PageSize A5/A5 [148.0x210.0mm 5.83"x8.27"]: "<</CNPageSizeName(A5)/PageSize[420 595]/ImagingBBox null>>setpagedevice": ""
+*ja.PageSize A4/A4 [210.0x297.0mm 8.27"x11.69"]: "<</CNPageSizeName(A4)/PageSize[595 842]/ImagingBBox null>>setpagedevice": ""
+*ja.PageSize A4.bl/A4 (フチなし) [210.0x297.0mm 8.27"x11.69"]: "<</CNPageSizeName(A4.bl)/PageSize[595 842]/ImagingBBox null>>setpagedevice": ""
+*ja.PageSize a3/A3 [297.0x420.0mm 11.69"x16.54"]: "<</CNPageSizeName(a3)/PageSize[842 1191]/ImagingBBox null>>setpagedevice": ""
+*ja.PageSize a3.bl/A3 (フチなし) [297.0x420.0mm 11.69"x16.54"]: "<</CNPageSizeName(a3.bl)/PageSize[842 1191]/ImagingBBox null>>setpagedevice": ""
+*ja.PageSize a3plus/A3ノビ (13ｘ19) [329.0x483.0mm 12.95"x19.02"]: "<</CNPageSizeName(a3plus)/PageSize[933 1369]/ImagingBBox null>>setpagedevice": ""
+*ja.PageSize a3plus.bl/A3ノビ (13ｘ19) (フチなし) [329.0x483.0mm 12.95"x19.02"]: "<</CNPageSizeName(a3plus.bl)/PageSize[933 1369]/ImagingBBox null>>setpagedevice": ""
+*ja.PageSize B5/B5 [182.0x257.0mm 7.17"x10.12"]: "<</CNPageSizeName(B5)/PageSize[516 729]/ImagingBBox null>>setpagedevice": ""
+*ja.PageSize b4/B4 [257.0x364.0mm 10.12"x14.33"]: "<</CNPageSizeName(b4)/PageSize[729 1032]/ImagingBBox null>>setpagedevice": ""
+*ja.PageSize 4X6/KG [101.6x152.4mm 4.00"x6.00"]: "<</CNPageSizeName(4X6)/PageSize[288 432]/ImagingBBox null>>setpagedevice": ""
+*ja.PageSize 4X6.bl/KG (フチなし) [101.6x152.4mm 4.00"x6.00"]: "<</CNPageSizeName(4X6.bl)/PageSize[288 432]/ImagingBBox null>>setpagedevice": ""
+*ja.PageSize 5X7/5x7 [127.0x177.8mm 5.00"x7.00"]: "<</CNPageSizeName(5X7)/PageSize[360 504]/ImagingBBox null>>setpagedevice": ""
+*ja.PageSize 5X7.bl/5x7 (フチなし) [127.0x177.8mm 5.00"x7.00"]: "<</CNPageSizeName(5X7.bl)/PageSize[360 504]/ImagingBBox null>>setpagedevice": ""
+*ja.PageSize 8X10/六切 [203.2x254.0mm 8.00"x10.00"]: "<</CNPageSizeName(8X10)/PageSize[576 720]/ImagingBBox null>>setpagedevice": ""
+*ja.PageSize 8X10.bl/六切 (フチなし) [203.2x254.0mm 8.00"x10.00"]: "<</CNPageSizeName(8X10.bl)/PageSize[576 720]/ImagingBBox null>>setpagedevice": ""
+*ja.PageSize 10X12/四切 [254.0x304.8mm 10.00"x12.00"]: "<</CNPageSizeName(10X12)/PageSize[720 864]/ImagingBBox null>>setpagedevice": ""
+*ja.PageSize 10X12.bl/四切 (フチなし) [254.0x304.8mm 10.00"x12.00"]: "<</CNPageSizeName(10X12.bl)/PageSize[720 864]/ImagingBBox null>>setpagedevice": ""
+*ja.PageSize l/L判 [89.0x127.0mm 3.50"x5.00"]: "<</CNPageSizeName(l)/PageSize[252 360]/ImagingBBox null>>setpagedevice": ""
+*ja.PageSize l.bl/L判 (フチなし) [89.0x127.0mm 3.50"x5.00"]: "<</CNPageSizeName(l.bl)/PageSize[252 360]/ImagingBBox null>>setpagedevice": ""
+*ja.PageSize 2l/2L判 [127.0x178.0mm 5.00"x7.01"]: "<</CNPageSizeName(2l)/PageSize[360 505]/ImagingBBox null>>setpagedevice": ""
+*ja.PageSize 2l.bl/2L判 (フチなし) [127.0x178.0mm 5.00"x7.01"]: "<</CNPageSizeName(2l.bl)/PageSize[360 505]/ImagingBBox null>>setpagedevice": ""
+*ja.PageSize letterfineart35/レター (アート紙 余白35mm) [215.9x279.4mm 8.50"x11.00"]: "<</CNPageSizeName(letterfineart35)/PageSize[612 792]/ImagingBBox null>>setpagedevice": ""
+*ja.PageSize a4fineart35/A4 (アート紙 余白35mm) [210.0x297.0mm 8.27"x11.69"]: "<</CNPageSizeName(a4fineart35)/PageSize[595 842]/ImagingBBox null>>setpagedevice": ""
+*ja.PageSize a3fineart35/A3 (アート紙 余白35mm) [297.0x420.0mm 11.69"x16.54"]: "<</CNPageSizeName(a3fineart35)/PageSize[842 1191]/ImagingBBox null>>setpagedevice": ""
+*ja.PageSize a3plusfineart35/A3ノビ (アート紙 余白35mm) [329.0x483.0mm 12.95"x19.02"]: "<</CNPageSizeName(a3plusfineart35)/PageSize[933 1369]/ImagingBBox null>>setpagedevice": ""
+*ja.PageSize postcard/はがき [100.0x148.0mm 3.94"x5.83"]: "<</CNPageSizeName(postcard)/PageSize[283 420]/ImagingBBox null>>setpagedevice": ""
+*ja.PageSize postcard.bl/はがき (フチなし) [100.0x148.0mm 3.94"x5.83"]: "<</CNPageSizeName(postcard.bl)/PageSize[283 420]/ImagingBBox null>>setpagedevice": ""
+*ja.PageSize postdbl/往復はがき [200.0x148.0mm 7.87"x5.83"]: "<</CNPageSizeName(postdbl)/PageSize[567 420]/ImagingBBox null>>setpagedevice": ""
+*ja.PageSize envelop10p/商用10号封筒 [104.8x241.3mm 4.12"x9.50"]: "<</CNPageSizeName(envelop10p)/PageSize[297 684]/ImagingBBox null>>setpagedevice": ""
+*ja.PageSize envelopdlp/DL封筒 [110.0x220.0mm 4.33"x8.66"]: "<</CNPageSizeName(envelopdlp)/PageSize[312 624]/ImagingBBox null>>setpagedevice": ""
+*ja.PageSize envj4p/洋形4号 [105.0x235.0mm 4.13"x9.25"]: "<</CNPageSizeName(envj4p)/PageSize[298 666]/ImagingBBox null>>setpagedevice": ""
+*ja.PageSize envj6p/洋形6号 [98.0x190.0mm 3.86"x7.48"]: "<</CNPageSizeName(envj6p)/PageSize[278 539]/ImagingBBox null>>setpagedevice": ""
+*ja.PageRegion Letter/レター [215.9x279.4mm 8.50"x11.00"]: "<</CNPageSizeName(Letter)/PageSize[612 792]/ImagingBBox null>>setpagedevice": ""
+*ja.PageRegion Letter.bl/レター (フチなし) [215.9x279.4mm 8.50"x11.00"]: "<</CNPageSizeName(Letter.bl)/PageSize[612 792]/ImagingBBox null>>setpagedevice": ""
+*ja.PageRegion Legal/リーガル [215.9x355.6mm 8.50"x14.00"]: "<</CNPageSizeName(Legal)/PageSize[612 1008]/ImagingBBox null>>setpagedevice": ""
+*ja.PageRegion ledger/11x17 [279.4x431.8mm 11.00"x17.00"]: "<</CNPageSizeName(ledger)/PageSize[792 1224]/ImagingBBox null>>setpagedevice": ""
+*ja.PageRegion ledger.bl/11x17 (フチなし) [279.4x431.8mm 11.00"x17.00"]: "<</CNPageSizeName(ledger.bl)/PageSize[792 1224]/ImagingBBox null>>setpagedevice": ""
+*ja.PageRegion A5/A5 [148.0x210.0mm 5.83"x8.27"]: "<</CNPageSizeName(A5)/PageSize[420 595]/ImagingBBox null>>setpagedevice": ""
+*ja.PageRegion A4/A4 [210.0x297.0mm 8.27"x11.69"]: "<</CNPageSizeName(A4)/PageSize[595 842]/ImagingBBox null>>setpagedevice": ""
+*ja.PageRegion A4.bl/A4 (フチなし) [210.0x297.0mm 8.27"x11.69"]: "<</CNPageSizeName(A4.bl)/PageSize[595 842]/ImagingBBox null>>setpagedevice": ""
+*ja.PageRegion a3/A3 [297.0x420.0mm 11.69"x16.54"]: "<</CNPageSizeName(a3)/PageSize[842 1191]/ImagingBBox null>>setpagedevice": ""
+*ja.PageRegion a3.bl/A3 (フチなし) [297.0x420.0mm 11.69"x16.54"]: "<</CNPageSizeName(a3.bl)/PageSize[842 1191]/ImagingBBox null>>setpagedevice": ""
+*ja.PageRegion a3plus/A3ノビ (13ｘ19) [329.0x483.0mm 12.95"x19.02"]: "<</CNPageSizeName(a3plus)/PageSize[933 1369]/ImagingBBox null>>setpagedevice": ""
+*ja.PageRegion a3plus.bl/A3ノビ (13ｘ19) (フチなし) [329.0x483.0mm 12.95"x19.02"]: "<</CNPageSizeName(a3plus.bl)/PageSize[933 1369]/ImagingBBox null>>setpagedevice": ""
+*ja.PageRegion B5/B5 [182.0x257.0mm 7.17"x10.12"]: "<</CNPageSizeName(B5)/PageSize[516 729]/ImagingBBox null>>setpagedevice": ""
+*ja.PageRegion b4/B4 [257.0x364.0mm 10.12"x14.33"]: "<</CNPageSizeName(b4)/PageSize[729 1032]/ImagingBBox null>>setpagedevice": ""
+*ja.PageRegion 4X6/KG [101.6x152.4mm 4.00"x6.00"]: "<</CNPageSizeName(4X6)/PageSize[288 432]/ImagingBBox null>>setpagedevice": ""
+*ja.PageRegion 4X6.bl/KG (フチなし) [101.6x152.4mm 4.00"x6.00"]: "<</CNPageSizeName(4X6.bl)/PageSize[288 432]/ImagingBBox null>>setpagedevice": ""
+*ja.PageRegion 5X7/5x7 [127.0x177.8mm 5.00"x7.00"]: "<</CNPageSizeName(5X7)/PageSize[360 504]/ImagingBBox null>>setpagedevice": ""
+*ja.PageRegion 5X7.bl/5x7 (フチなし) [127.0x177.8mm 5.00"x7.00"]: "<</CNPageSizeName(5X7.bl)/PageSize[360 504]/ImagingBBox null>>setpagedevice": ""
+*ja.PageRegion 8X10/六切 [203.2x254.0mm 8.00"x10.00"]: "<</CNPageSizeName(8X10)/PageSize[576 720]/ImagingBBox null>>setpagedevice": ""
+*ja.PageRegion 8X10.bl/六切 (フチなし) [203.2x254.0mm 8.00"x10.00"]: "<</CNPageSizeName(8X10.bl)/PageSize[576 720]/ImagingBBox null>>setpagedevice": ""
+*ja.PageRegion 10X12/四切 [254.0x304.8mm 10.00"x12.00"]: "<</CNPageSizeName(10X12)/PageSize[720 864]/ImagingBBox null>>setpagedevice": ""
+*ja.PageRegion 10X12.bl/四切 (フチなし) [254.0x304.8mm 10.00"x12.00"]: "<</CNPageSizeName(10X12.bl)/PageSize[720 864]/ImagingBBox null>>setpagedevice": ""
+*ja.PageRegion l/L判 [89.0x127.0mm 3.50"x5.00"]: "<</CNPageSizeName(l)/PageSize[252 360]/ImagingBBox null>>setpagedevice": ""
+*ja.PageRegion l.bl/L判 (フチなし) [89.0x127.0mm 3.50"x5.00"]: "<</CNPageSizeName(l.bl)/PageSize[252 360]/ImagingBBox null>>setpagedevice": ""
+*ja.PageRegion 2l/2L判 [127.0x178.0mm 5.00"x7.01"]: "<</CNPageSizeName(2l)/PageSize[360 505]/ImagingBBox null>>setpagedevice": ""
+*ja.PageRegion 2l.bl/2L判 (フチなし) [127.0x178.0mm 5.00"x7.01"]: "<</CNPageSizeName(2l.bl)/PageSize[360 505]/ImagingBBox null>>setpagedevice": ""
+*ja.PageRegion letterfineart35/レター (アート紙 余白35mm) [215.9x279.4mm 8.50"x11.00"]: "<</CNPageSizeName(letterfineart35)/PageSize[612 792]/ImagingBBox null>>setpagedevice": ""
+*ja.PageRegion a4fineart35/A4 (アート紙 余白35mm) [210.0x297.0mm 8.27"x11.69"]: "<</CNPageSizeName(a4fineart35)/PageSize[595 842]/ImagingBBox null>>setpagedevice": ""
+*ja.PageRegion a3fineart35/A3 (アート紙 余白35mm) [297.0x420.0mm 11.69"x16.54"]: "<</CNPageSizeName(a3fineart35)/PageSize[842 1191]/ImagingBBox null>>setpagedevice": ""
+*ja.PageRegion a3plusfineart35/A3ノビ (アート紙 余白35mm) [329.0x483.0mm 12.95"x19.02"]: "<</CNPageSizeName(a3plusfineart35)/PageSize[933 1369]/ImagingBBox null>>setpagedevice": ""
+*ja.PageRegion postcard/はがき [100.0x148.0mm 3.94"x5.83"]: "<</CNPageSizeName(postcard)/PageSize[283 420]/ImagingBBox null>>setpagedevice": ""
+*ja.PageRegion postcard.bl/はがき (フチなし) [100.0x148.0mm 3.94"x5.83"]: "<</CNPageSizeName(postcard.bl)/PageSize[283 420]/ImagingBBox null>>setpagedevice": ""
+*ja.PageRegion postdbl/往復はがき [200.0x148.0mm 7.87"x5.83"]: "<</CNPageSizeName(postdbl)/PageSize[567 420]/ImagingBBox null>>setpagedevice": ""
+*ja.PageRegion envelop10p/商用10号封筒 [104.8x241.3mm 4.12"x9.50"]: "<</CNPageSizeName(envelop10p)/PageSize[297 684]/ImagingBBox null>>setpagedevice": ""
+*ja.PageRegion envelopdlp/DL封筒 [110.0x220.0mm 4.33"x8.66"]: "<</CNPageSizeName(envelopdlp)/PageSize[312 624]/ImagingBBox null>>setpagedevice": ""
+*ja.PageRegion envj4p/洋形4号 [105.0x235.0mm 4.13"x9.25"]: "<</CNPageSizeName(envj4p)/PageSize[298 666]/ImagingBBox null>>setpagedevice": ""
+*ja.PageRegion envj6p/洋形6号 [98.0x190.0mm 3.86"x7.48"]: "<</CNPageSizeName(envj6p)/PageSize[278 539]/ImagingBBox null>>setpagedevice": ""
+*ja.Translation CNBorderless/フチなし全面: ""
+*ja.Translation CNExtension/はみ出し量: PickOne: ""
+*ja.Translation CNColorAdjust/マニュアル色調整: ""
+*ja.Translation CNBalanceC/シアン: PickOne: ""
+*ja.Translation CNBalanceM/マゼンタ: PickOne: ""
+*ja.Translation CNBalanceY/イエロー: PickOne: ""
+*ja.Translation CNTone/モノクロ色調: PickOne: ""
+*ja.Translation CNGamma/明るさ: PickOne: ""
+*ja.CNGamma 1.4/明るく: "<</CNGamma(1.4)>>setpagedevice": ""
+*ja.CNGamma 1.8/通常: "<</CNGamma(1.8)>>setpagedevice": ""
+*ja.CNGamma 2.2/暗く: "<</CNGamma(2.2)>>setpagedevice": ""
+*ja.Translation CNDensity/濃度: PickOne: ""
+*ja.Translation CNContrast/コントラスト: PickOne: ""
+*ja.Translation CNDetectPaperWidth/用紙の幅を検知する: Boolean: ""
