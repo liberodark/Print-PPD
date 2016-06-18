@@ -1,2 +1,2 @@
 # Print-PPD
-Print PPD Files for Linux
+Printers PPD Files for Linux
