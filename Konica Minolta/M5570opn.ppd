@@ -1,0 +1,296 @@
+*PPD-Adobe: "4.3"
+*% Adobe Systems Printer Description File
+*% For "KONICA MINOLTA mc5570 OpenOffice PPD" version 3010.042
+*% Copyright(c) 2006 KONICA MINOLTA BUSINESS TECHNOLOGIES, INC. All rights reserved.
+*% Created:     08.24.06
+*% Modified:    09/19/06
+*% Platform:    Linux
+
+*FormatVersion:         "4.3"
+*PCFileName:	        "M5570opn.PPD"
+*FileVersion:	        "1.0"
+*LanguageEncoding:	    ISOLatin1
+*LanguageVersion:	    English
+*LanguageLevel: 	    "3"
+*Product:		        "(KONICA MINOLTA mc5570 OpenOffice PPD)"
+*PSVersion:             "(3010.042) 2"
+*Manufacturer:	        "KONICA MINOLTA"
+*ModelName:		        "KONICA MINOLTA mc5570 OpenOffice PPD"
+*NickName:		        "KONICA MINOLTA mc5570 OpenOffice PPD"
+*ShortNickName: 		"KONICA MINOLTA mc5570 OpenOffice PPD"
+*AcceptsTrueType:       True
+*PrintPSErrors:         True
+*Protocols:             TBCP
+*ColorDevice:           True
+*DefaultColorSpace:     CMYK
+*SuggestedJobTimeOut:   0
+*SuggestedWaitTimeOut:  300
+
+
+*%----------------------------------------------------------------------
+*% ================== Paper Handling ===================================
+*%----------------------------------------------------------------------
+*%Code in this section both selects a tray and sets up a frame buffer. 
+
+*OpenUI  *PageSize/Paper Sizes: PickOne
+*OrderDependency: 40 AnySetup *PageSize
+*DefaultPageSize: Letter
+*PageSize Letter/Letter:		"<< /PageSize [612 792]>> setpagedevice"
+*PageSize Legal/Legal: 		"<< /PageSize [612 1008]>> setpagedevice"
+*PageSize Statement/Statement:	"<< /PageSize [396 612]>> setpagedevice"
+*PageSize Executive/Executive: 	"<< /PageSize [522 756]>> setpagedevice"
+*PageSize A4/A4: 				"<< /PageSize [595 842]>> setpagedevice"
+*PageSize A5/A5: 				"<< /PageSize [420 595]>> setpagedevice"
+*PageSize A6/A6: 				"<< /PageSize [298 420]>> setpagedevice"
+*PageSize B5/B5(JIS): 				"<< /PageSize [516 729]>> setpagedevice"
+*PageSize ISOB5/B5(ISO):			"<< /PageSize [499 709]>> setpagedevice"
+*PageSize B6/B6: 				"<< /PageSize [362 512]>> setpagedevice"
+*PageSize A4Plus/Folio:		"<< /PageSize [595 935]>> setpagedevice"
+*PageSize LetterPlus/SP Folio:	                "<< /PageSize [612 914]>> setpagedevice"
+*PageSize Foolscap/Foolscap:		"<< /PageSize [576 936]>> setpagedevice"
+*PageSize UKQuarto/UK Quarto:			"<< /PageSize [576 720]>> setpagedevice"
+*PageSize GLetter/Government Letter: 		"<< /PageSize [576 756]>> setpagedevice"
+*PageSize GLegal/Government Legal:	"<< /PageSize [612 935]>> setpagedevice"
+*PageSize 4x6/Photo Size 4"x6"_10x15:		"<< /PageSize [288 432]>> setpagedevice"
+*PageSize Com10/Envelope Com10: 		"<< /PageSize [297 684]>> setpagedevice"
+*PageSize EnvDL/Envelope DL:			"<< /PageSize [312 624]>> setpagedevice"
+*PageSize EnvC5/Envelope C5: 			"<< /PageSize [459 649]>> setpagedevice"
+*PageSize EnvC6/Envelope C6: 			"<< /PageSize [323 459]>> setpagedevice"
+*PageSize EnvMonarch/Envelope Monarch: 		"<< /PageSize [279 540]>> setpagedevice"
+*PageSize EnvChou3/Envelope Chou #3: 		"<< /PageSize [340 666]>> setpagedevice"
+*PageSize EnvChou4/Envelope Chou #4: 		"<< /PageSize [255 581]>> setpagedevice"
+*PageSize EnvYou4/Envelope You #4: 		"<< /PageSize [298 666]>> setpagedevice"
+*PageSize JPostcard/Japanese Postcard: 		"<< /PageSize [284 419]>> setpagedevice"
+*PageSize DoublePostcardRotated/Japanese Postcard-D:"<< /PageSize [420 567]>> setpagedevice"
+*PageSize 16K/16K: 				"<< /PageSize [553 765]>> setpagedevice"
+*PageSize Kai16/Kai 16:				"<< /PageSize [524 737]>> setpagedevice"
+*PageSize Kai32/Kai 32:				"<< /PageSize [369 524]>> setpagedevice"
+
+
+*?PageSize: "
+ save
+   currentpagedevice /PageSize get aload pop
+   2 copy gt {exch} if
+   (Unknown)
+   (<<) cvx exec
+    [612 792]   (Letter)
+    [612 1008]  (Legal)
+    [396 612]   (Statement)
+    [522 756]   (Executive)
+    [595 842]   (A4)
+    [420 595]   (A5)
+    [298 420]   (A6)
+    [516 729]   (B5)
+    [499 709]   (ISOB5)
+    [362 512]   (B6)
+    [595 935]   (A4Plus)
+    [612 914]   (LetterPlus)
+    [576 936]   (Foolscap)
+    [576 720]   (UKQuarto)
+    [576 756]   (GLetter)
+    [612 935]   (GLegal)
+    [288 432]   (4x6)
+    [297 684]   (Com10)
+    [312 624]   (EnvDL)
+    [459 649]   (EnvC5)
+    [323 459]   (EnvC6)
+    [279 540]   (EnvMonarch)
+    [340 666]   (EnvChou3)
+    [255 581]   (EnvChou4)
+    [298 666]   (EnvYou4)
+    [284 419]   (JPostcard)
+    [420 567] (DoublePostcardRotated)
+    [553 765]   (16K)
+    [524 737]   (Kai16)
+    [369 524]   (Kai32)
+   (>>) cvx exec
+ { exch aload pop 4 index sub abs 5 le exch
+   5 index sub abs 5 le and
+      {exch pop exit} {pop} ifelse
+   } bind forall
+   = flush pop pop
+restore
+"
+*End
+*CloseUI: *PageSize
+
+*UseHWMargins True: ""
+*DefaultUseHWMargins: True
+*HWMargins: 12 12 12 12
+*LeadingEdge Short: ""
+*DefaultLeadingEdge: Short
+
+*NonUIOrderDependency: 44 AnySetup *CustomPageSize
+*CustomPageSize True: "
+pop pop pop
+exch
+<<
+	/CustomPageSize [ 5 -2 roll ]
+	/ImagingBBox null
+>> setpagedevice"
+*End
+
+*ParamCustomPageSize Height: 1 points 419.6 3401.7
+*ParamCustomPageSize Width: 2 points 260.9 612.3
+*ParamCustomPageSize WidthOffset: 3 points 0 0
+*ParamCustomPageSize HeightOffset: 4 points 0 0
+*ParamCustomPageSize Orientation: 5 int 0 1
+
+*OpenUI *PageRegion: PickOne
+*OrderDependency: 45 AnySetup *PageRegion
+*DefaultPageRegion: Letter
+*PageRegion Letter/Letter:		 	                "<< /PageSize [612 792]>> setpagedevice"
+*PageRegion Legal/Legal: 				            "<< /PageSize [612 1008]>> setpagedevice"
+*PageRegion Statement/Statement:		            "<< /PageSize [396 612]>> setpagedevice"
+*PageRegion Executive/Executive: 		            "<< /PageSize [522 756]>> setpagedevice"
+*PageRegion A4/A4: 					                "<< /PageSize [595 842]>> setpagedevice"
+*PageRegion A5/A5: 					                "<< /PageSize [420 595]>> setpagedevice"
+*PageRegion A6/A6: 					                "<< /PageSize [298 420]>> setpagedevice"
+*PageRegion B5/B5(JIS): 					                "<< /PageSize [516 729]>> setpagedevice"
+*PageRegion ISOB5/B5(ISO):                            "<< /PageSize [499 709]>> setpagedevice"
+*PageRegion B6/B6: 					                "<< /PageSize [362 512]>> setpagedevice"
+*PageRegion A4Plus/Folio:	                        "<< /PageSize [595 935]>> setpagedevice"
+*PageRegion LetterPlus/SP Folio:	                "<< /PageSize [612 914]>> setpagedevice"
+*PageRegion Foolscap/Foolscap:		                "<< /PageSize [576 936]>> setpagedevice"
+*PageRegion UKQuarto/UK Quarto:		                "<< /PageSize [576 720]>> setpagedevice"
+*PageRegion GLetter/Government Letter: 	                    "<< /PageSize [576 756]>> setpagedevice"
+*PageRegion GLegal/Government Legal:	                        "<< /PageSize [612 935]>> setpagedevice"
+*PageRegion 4x6/Photo Size 4"x6"_10x15:		 	                "<< /PageSize [288 432]>> setpagedevice"
+*PageRegion Com10/Envelope Com10: 				            "<< /PageSize [297 684]>> setpagedevice"
+*PageRegion EnvDL/Envelope DL: 					            "<< /PageSize [312 624]>> setpagedevice"
+*PageRegion EnvC5/Envelope C5: 				                "<< /PageSize [459 649]>> setpagedevice"
+*PageRegion EnvC6/Envelope C6: 				                "<< /PageSize [323 459]>> setpagedevice"
+*PageRegion EnvMonarch/Envelope Monarch: 		            "<< /PageSize [279 540]>> setpagedevice"
+*PageRegion EnvChou3/Envelope Chou #3: 		                "<< /PageSize [340 666]>> setpagedevice"
+*PageRegion EnvChou4/Envelope Chou #4: 		                "<< /PageSize [255 581]>> setpagedevice"
+*PageRegion EnvYou4/Envelope You #4: 		                "<< /PageSize [298 666]>> setpagedevice"
+*PageRegion JPostcard/Japanese Postcard: 		            "<< /PageSize [284 419]>> setpagedevice"
+*PageRegion DoublePostcardRotated/Japanese Postcard-D:	"<< /PageSize [420 567]>> setpagedevice"
+*PageRegion 16K/16K: 					            "<< /PageSize [553 765]>> setpagedevice"
+*PageRegion Kai16/Kai 16:				            "<< /PageSize [524 737]>> setpagedevice"
+*PageRegion Kai32/Kai 32:				            "<< /PageSize [369 524]>> setpagedevice"
+
+*?PageRegion: "
+ save
+   currentpagedevice /PageSize get aload pop
+   2 copy gt {exch} if
+   (Unknown)
+   25 dict
+    [612 792]   (Letter)
+    [612 1008]  (Legal)
+    [396 612]   (Statement)
+    [522 756]   (Executive)
+    [595 842]   (A4)
+    [420 595]   (A5)
+    [298 420]   (A6)
+    [516 729]   (B5)
+    [499 709]   (ISOB5)
+    [362 512]   (B6)
+    [595 935]   (A4Plus)
+    [612 914]   (LetterPlus)
+    [576 936]   (Foolscap)
+    [576 720]   (UKQuarto)
+    [576 756]   (GLetter)
+    [612 935]   (GLegal)
+    [288 432]   (4x6)
+    [297 684]   (Com10)
+    [312 624]   (EnvDL)
+    [459 649]   (EnvC5)
+    [323 459]   (EnvC6)
+    [279 540]   (EnvMonarch)
+    [340 666]   (EnvChou3)
+    [255 581]   (EnvChou4)
+    [298 666]   (EnvYou4)
+    [284 419]   (JPostcard)
+    [420 567] (DoublePostcardRotated)
+    [553 765]   (16K)
+    [524 737]   (Kai16)
+    [369 524]   (Kai32)
+   { exch aload pop 4 index sub abs 5 le exch
+   5 index sub abs 5 le and
+      {exch pop exit} {pop} ifelse
+   } bind forall
+   = flush pop pop
+restore
+"
+*End
+*CloseUI: *PageRegion
+*RequiresPageRegion All: True
+
+*% The following entries provide information about specific paper keywords.
+*DefaultImageableArea: Letter
+*ImageableArea Letter/Letter:	 		                "12 12 600 780"
+*ImageableArea Legal/Legal: 			                "12 12 600 996"
+*ImageableArea Statement/Statement: 	                "12 12 384 600"
+*ImageableArea Executive/Executive: 	                "12 12 510 744"
+*ImageableArea A4/A4: 					                "12 12 583 830"
+*ImageableArea A5/A5: 					                "12 12 408 583"
+*ImageableArea A6/A6: 					                "12 12 286 408"
+*ImageableArea B5/B5(JIS):	 				                "12 12 504 717"
+*ImageableArea ISOB5/B5(ISO): 			                "12 12 487 697"
+*ImageableArea B6/B6:	 				                "12 12 350 500"
+*ImageableArea A4Plus/Folio:                           "12 12 583 923"
+*ImageableArea LetterPlus/SP Folio:	                "12 12 600 902"
+*ImageableArea Foolscap/Foolscap:		                "12 12 564 924"
+*ImageableArea UKQuarto/UK Quarto:		                "12 12 564 708"
+*ImageableArea GLetter/Government Letter: 		                "12 12 564 744"
+*ImageableArea GLegal/Government Legal:	                        "12 12 600 923"
+*ImageableArea 4x6/Photo Size 4"x6"_10x15:	 		                "12 12 276 420"
+*ImageableArea Com10/Envelope Com10:	 		 	                "12 12 285 672"
+*ImageableArea EnvDL/Envelope DL: 				                "12 12 300 612"
+*ImageableArea EnvC5/Envelope C5:				                "12 12 447 637"
+*ImageableArea EnvC6/Envelope C6:	 			                "12 12 311 447"
+*ImageableArea EnvMonarch/Envelope Monarch:		                "12 12 267 528"
+*ImageableArea EnvChou3/Envelope Chou #3:	 	                "12 12 328 654"
+*ImageableArea EnvChou4/Envelope Chou #4:	 	                "12 12 243 569"
+*ImageableArea EnvYou4/Envelope You #4:		                    "12 12 286 654"
+*ImageableArea JPostcard/Japanese Postcard:	 	                "12 12 272 407"
+*ImageableArea DoublePostcardRotated/Japanese Postcard-D:    "12 12 408 555"
+*ImageableArea 16K/16K: 				                "12 12 541 753"
+*ImageableArea Kai16/Kai 16:				                "12 12 512 725"
+*ImageableArea Kai32/Kai 32:				                "12 12 357 512"
+
+*?ImageableArea: "
+ save /cvp { cvi (            ) cvs print ( ) print } bind def
+  newpath clippath pathbbox
+  4 -2 roll exch 2 {ceiling cvp} repeat
+  exch 2 {floor cvp} repeat ( ) = flush
+ restore
+"
+*End
+
+*% These provide the physical dimensions of the paper (by keyword)
+*DefaultPaperDimension: Letter
+*PaperDimension Letter/Letter:	 		                "612 792"
+*PaperDimension Legal/Legal: 			                "612 1008"
+*PaperDimension Statement/Statement: 	                "396 612"
+*PaperDimension Executive/Executive: 	                "522 756"
+*PaperDimension A4/A4: 					                "595 842"
+*PaperDimension A5/A5: 					                "420 595"
+*PaperDimension A6/A6: 					                "298 420"
+*PaperDimension B5/B5(JIS):	 				                "516 729"
+*PaperDimension ISOB5/B5(ISO): 			                "499 709"
+*PaperDimension B6/B6:	 				                "362 512"
+*PaperDimension A4Plus/Folio:                          "595 935"
+*PaperDimension LetterPlus/SP Folio:	                "612 914"
+*PaperDimension Foolscap/Foolscap:		                "576 936"
+*PaperDimension UKQuarto/UK Quarto:		                "576 720"
+*PaperDimension GLetter/Government Letter: 		                "576 756"
+*PaperDimension GLegal/Government Legal:	                        "612 935"
+*PaperDimension 4x6/Photo Size 4"x6"_10x15:	 		                "288 432"
+*PaperDimension Com10/Envelope Com10:	 		 	            "297 684"
+*PaperDimension EnvDL/Envelope DL: 				                "312 624"
+*PaperDimension EnvC5/Envelope C5:				                "459 649"
+*PaperDimension EnvC6/Envelope C6:	 			                "323 459"
+*PaperDimension EnvMonarch/Envelope Monarch:		                "279 540"
+*PaperDimension EnvChou3/Envelope Chou #3:	 	                "340 666"
+*PaperDimension EnvChou4/Envelope Chou #4:	 	                "255 581"
+*PaperDimension EnvYou4/Envelope You #4:		                "298 666"
+*PaperDimension JPostcard/Japanese Postcard:	 	            "284 419"
+*PaperDimension DoublePostcardRotated/Japanese Postcard-D:   "420 567"
+*PaperDimension 16K/16K: 				                "553 765"
+*PaperDimension Kai16/Kai 16:				            "524 737"
+*PaperDimension Kai32/Kai 32:				            "369 524"
+
+
+*% end of PPD
